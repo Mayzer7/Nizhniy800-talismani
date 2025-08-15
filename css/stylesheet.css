@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Platform';
+  src: url('../fonts/PlatformLCWeb-Medium.eot#iefix') format('embedded-opentype'), 
+	url('../fonts/PlatformLCWeb-Medium.woff') format('woff'), 
+	url('../fonts/PlatformLCWeb-Medium.ttf')  format('truetype'),
+	url('../images/PlatformLCWeb-Medium.svg#PlatformLCWeb-Medium') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Platform';
+  src: url('../fonts/PlatformLCWeb-Regular.eot#iefix') format('embedded-opentype'),  
+  url('../fonts/PlatformLCWeb-Regular.woff') format('woff'), 
+  url('../fonts/PlatformLCWeb-Regular.ttf')  format('truetype'), 
+  url('../images/PlatformLCWeb-Regular.svg#PlatformLCWeb-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Platform';
+  src: url('../fonts/PlatformLCWeb-Light.eot#iefix') format('embedded-opentype'),  
+  url('../fonts/PlatformLCWeb-Light.woff') format('woff'), 
+  url('../fonts/PlatformLCWeb-Light.ttf')  format('truetype'), 
+  url('../images/PlatformLCWeb-Light.svg#PlatformLCWeb-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Graphik LCG';
+    font-display: swap;
+    src: url('../fonts/GraphikLCG-Medium.eot');
+    src: local('Graphik LCG Medium'), local('GraphikLCG-Medium'),
+        url('../fonts/GraphikLCG-Medium.eot#iefix') format('embedded-opentype'),
+        url('../fonts/GraphikLCG-Medium.woff2') format('woff2'),
+        url('../fonts/GraphikLCG-Medium.woff') format('woff'),
+        url('../fonts/GraphikLCG-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Graphik LCG';
+    font-display: swap;
+    src: url('../fonts/GraphikLCG-Regular.eot');
+    src: local('Graphik LCG Regular'), local('GraphikLCG-Regular'),
+        url('../fonts/GraphikLCG-Regular.eot#iefix') format('embedded-opentype'),
+        url('../fonts/GraphikLCG-Regular.woff2') format('woff2'),
+        url('../fonts/GraphikLCG-Regular.woff') format('woff'),
+        url('../fonts/GraphikLCG-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    font-display: swap;
+    src: url('../fonts/GraphikLCG-Semibold.eot');
+    src: local('Graphik LCG Semibold'), local('GraphikLCG-Semibold'),
+        url('../fonts/GraphikLCG-Semibold.eot#iefix') format('embedded-opentype'),
+        url('../fonts/GraphikLCG-Semibold.woff2') format('woff2'),
+        url('../fonts/GraphikLCG-Semibold.woff') format('woff'),
+        url('../fonts/GraphikLCG-Semibold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Gropled';
+  font-display: swap;
+  src: url('../fonts/Gropled-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nizhegorodsky';
+    src: 
+	url('ST-Nizhegorodsky.woff') format('woff'), 
+	url('ST-Nizhegorodsky.woff2') format('woff2'), 
+	url('../fonts/ST-Nizhegorodsky.ttf')  format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+

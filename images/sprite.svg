@@ -1,0 +1,11 @@
+<svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300">
+    <style>:root>svg{display:none}:root>svg:target{display:block}</style>
+    <svg id="chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 11" fill="none">
+        <path d="M0 5.5H35.0137" stroke-width="1.6"/>
+        <path d="M32.0548 1.5L36 5.5L32.0548 9.5" stroke-width="1.6"/>
+    </svg>
+    <svg id="chevron-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+        <path d="M1.5 21.3325L21.7584 3" stroke-width="2.20747"/>
+        <path d="M4.21289 3H21.7593V19.4436" stroke-width="2.20747"/>
+    </svg>
+</svg>

@@ -1,0 +1,2795 @@
+.datepicker--cells {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.datepicker--cell {
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 32px;
+    z-index: 1
+}
+
+.datepicker--cell.-focus- {
+    background: #f0f0f0
+}
+
+.datepicker--cell.-current- {
+    color: #4EB5E6
+}
+
+.datepicker--cell.-current-.-focus- {
+    color: #4a4a4a
+}
+
+.datepicker--cell.-current-.-in-range- {
+    color: #4EB5E6
+}
+
+.datepicker--cell.-in-range- {
+    background: rgba(92, 196, 239, .1);
+    color: #4a4a4a;
+    border-radius: 0
+}
+
+.datepicker--cell.-in-range-.-focus- {
+    background-color: rgba(92, 196, 239, .2)
+}
+
+.datepicker--cell.-disabled- {
+    cursor: default;
+    color: #aeaeae
+}
+
+.datepicker--cell.-disabled-.-focus- {
+    color: #aeaeae
+}
+
+.datepicker--cell.-disabled-.-in-range- {
+    color: #a1a1a1
+}
+
+.datepicker--cell.-disabled-.-current-.-focus- {
+    color: #aeaeae
+}
+
+.datepicker--cell.-range-from- {
+    border: 1px solid rgba(92, 196, 239, .5);
+    background-color: rgba(92, 196, 239, .1);
+    border-radius: 4px 0 0 4px
+}
+
+.datepicker--cell.-range-to- {
+    border: 1px solid rgba(92, 196, 239, .5);
+    background-color: rgba(92, 196, 239, .1);
+    border-radius: 0 4px 4px 0
+}
+
+.datepicker--cell.-selected-,
+.datepicker--cell.-selected-.-current- {
+    color: #fff;
+    background: #5cc4ef
+}
+
+.datepicker--cell.-range-from-.-range-to- {
+    border-radius: 4px
+}
+
+.datepicker--cell.-selected- {
+    border: none
+}
+
+.datepicker--cell.-selected-.-focus- {
+    background: #45bced
+}
+
+.datepicker--cell:empty {
+    cursor: default
+}
+
+.datepicker--days-names {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 8px 0 3px
+}
+
+.datepicker--day-name {
+    color: #FF9A19;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .8em
+}
+
+.-only-timepicker- .datepicker--content,
+.datepicker--body,
+.datepicker-inline .datepicker--pointer {
+    display: none
+}
+
+.datepicker--cell-day {
+    width: 14.28571%
+}
+
+.datepicker--cells-months {
+    height: 170px
+}
+
+.datepicker--cell-month {
+    width: 33.33%;
+    height: 25%
+}
+
+.datepicker--cells-years,
+.datepicker--years {
+    height: 170px
+}
+
+.datepicker--cell-year {
+    width: 25%;
+    height: 33.33%
+}
+
+.datepickers-container {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+@media print {
+    .datepickers-container {
+        display: none
+    }
+}
+
+.datepicker {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    box-sizing: content-box;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    color: #4a4a4a;
+    width: 250px;
+    position: absolute;
+    left: -100000px;
+    opacity: 0;
+    transition: opacity .3s ease, left 0s .3s, -webkit-transform .3s ease;
+    transition: opacity .3s ease, transform .3s ease, left 0s .3s;
+    transition: opacity .3s ease, transform .3s ease, left 0s .3s, -webkit-transform .3s ease;
+    z-index: 100
+}
+
+.datepicker.-from-top- {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px)
+}
+
+.datepicker.-from-right- {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px)
+}
+
+.datepicker.-from-bottom- {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px)
+}
+
+.datepicker.-from-left- {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px)
+}
+
+.datepicker.active {
+    opacity: 1;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    transition: opacity .3s ease, left 0s 0s, -webkit-transform .3s ease;
+    transition: opacity .3s ease, transform .3s ease, left 0s 0s;
+    transition: opacity .3s ease, transform .3s ease, left 0s 0s, -webkit-transform .3s ease
+}
+
+.datepicker-inline .datepicker {
+    border-color: #d7d7d7;
+    box-shadow: none;
+    position: static;
+    left: auto;
+    right: auto;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+}
+
+.datepicker--content {
+    box-sizing: content-box;
+    padding: 4px
+}
+
+.datepicker--pointer {
+    position: absolute;
+    background: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    width: 10px;
+    height: 10px;
+    z-index: -1
+}
+
+.datepicker--nav-action:hover,
+.datepicker--nav-title:hover {
+    background: #f0f0f0
+}
+
+.-top-center- .datepicker--pointer,
+.-top-left- .datepicker--pointer,
+.-top-right- .datepicker--pointer {
+    top: calc(100% - 4px);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg)
+}
+
+.-right-bottom- .datepicker--pointer,
+.-right-center- .datepicker--pointer,
+.-right-top- .datepicker--pointer {
+    right: calc(100% - 4px);
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg)
+}
+
+.-bottom-center- .datepicker--pointer,
+.-bottom-left- .datepicker--pointer,
+.-bottom-right- .datepicker--pointer {
+    bottom: calc(100% - 4px);
+    -webkit-transform: rotate(315deg);
+    transform: rotate(315deg)
+}
+
+.-left-bottom- .datepicker--pointer,
+.-left-center- .datepicker--pointer,
+.-left-top- .datepicker--pointer {
+    left: calc(100% - 4px);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.-bottom-left- .datepicker--pointer,
+.-top-left- .datepicker--pointer {
+    left: 10px
+}
+
+.-bottom-right- .datepicker--pointer,
+.-top-right- .datepicker--pointer {
+    right: 10px
+}
+
+.-bottom-center- .datepicker--pointer,
+.-top-center- .datepicker--pointer {
+    left: calc(50% - 10px / 2)
+}
+
+.-left-top- .datepicker--pointer,
+.-right-top- .datepicker--pointer {
+    top: 10px
+}
+
+.-left-bottom- .datepicker--pointer,
+.-right-bottom- .datepicker--pointer {
+    bottom: 10px
+}
+
+.-left-center- .datepicker--pointer,
+.-right-center- .datepicker--pointer {
+    top: calc(50% - 10px / 2)
+}
+
+.datepicker--body.active {
+    display: block
+}
+
+.datepicker--nav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #efefef;
+    min-height: 32px;
+    padding: 4px
+}
+
+.-only-timepicker- .datepicker--nav {
+    display: none
+}
+
+.datepicker--nav-action,
+.datepicker--nav-title {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.datepicker--nav-action {
+    width: 32px;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.datepicker--nav-action.-disabled- {
+    visibility: hidden
+}
+
+.datepicker--nav-action svg {
+    width: 32px;
+    height: 32px
+}
+
+.datepicker--nav-action path {
+    fill: none;
+    stroke: #9c9c9c;
+    stroke-width: 2px
+}
+
+.datepicker--nav-title {
+    border-radius: 4px;
+    padding: 0 8px
+}
+
+.datepicker--buttons,
+.datepicker--time {
+    border-top: 1px solid #efefef;
+    padding: 4px
+}
+
+.datepicker--nav-title i {
+    font-style: normal;
+    color: #9c9c9c;
+    margin-left: 5px
+}
+
+.datepicker--nav-title.-disabled- {
+    cursor: default;
+    background: 0 0
+}
+
+.datepicker--buttons {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.datepicker--button {
+    color: #4EB5E6;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 32px
+}
+
+.datepicker--button:hover {
+    color: #4a4a4a;
+    background: #f0f0f0
+}
+
+.datepicker--time {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative
+}
+
+.datepicker--time.-am-pm- .datepicker--time-sliders {
+    -webkit-flex: 0 1 138px;
+    -ms-flex: 0 1 138px;
+    flex: 0 1 138px;
+    max-width: 138px
+}
+
+.-only-timepicker- .datepicker--time {
+    border-top: none
+}
+
+.datepicker--time-sliders {
+    -webkit-flex: 0 1 153px;
+    -ms-flex: 0 1 153px;
+    flex: 0 1 153px;
+    margin-right: 10px;
+    max-width: 153px
+}
+
+.datepicker--time-label {
+    display: none;
+    font-size: 12px
+}
+
+.datepicker--time-current {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 0 0 10px
+}
+
+.datepicker--time-current-colon {
+    margin: 0 2px 3px;
+    line-height: 1
+}
+
+.datepicker--time-current-hours,
+.datepicker--time-current-minutes {
+    line-height: 1;
+    font-size: 19px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    position: relative;
+    z-index: 1
+}
+
+.datepicker--time-current-hours:after,
+.datepicker--time-current-minutes:after {
+    content: '';
+    background: #f0f0f0;
+    border-radius: 4px;
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    opacity: 0
+}
+
+.datepicker--time-current-hours.-focus-:after,
+.datepicker--time-current-minutes.-focus-:after {
+    opacity: 1
+}
+
+.datepicker--time-current-ampm {
+    text-transform: uppercase;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    color: #9c9c9c;
+    margin-left: 6px;
+    font-size: 11px;
+    margin-bottom: 1px
+}
+
+.datepicker--time-row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 11px;
+    height: 17px;
+    background: linear-gradient(to right, #dedede, #dedede) left 50%/100% 1px no-repeat
+}
+
+.datepicker--time-row:first-child {
+    margin-bottom: 4px
+}
+
+.datepicker--time-row input[type=range] {
+    background: 0 0;
+    cursor: pointer;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none
+}
+
+.datepicker--time-row input[type=range]::-ms-tooltip {
+    display: none
+}
+
+.datepicker--time-row input[type=range]:hover::-webkit-slider-thumb {
+    border-color: #b8b8b8
+}
+
+.datepicker--time-row input[type=range]:hover::-moz-range-thumb {
+    border-color: #b8b8b8
+}
+
+.datepicker--time-row input[type=range]:hover::-ms-thumb {
+    border-color: #b8b8b8
+}
+
+.datepicker--time-row input[type=range]:focus {
+    outline: 0
+}
+
+.datepicker--time-row input[type=range]:focus::-webkit-slider-thumb {
+    background: #5cc4ef;
+    border-color: #5cc4ef
+}
+
+.datepicker--time-row input[type=range]:focus::-moz-range-thumb {
+    background: #5cc4ef;
+    border-color: #5cc4ef
+}
+
+.datepicker--time-row input[type=range]:focus::-ms-thumb {
+    background: #5cc4ef;
+    border-color: #5cc4ef
+}
+
+.datepicker--time-row input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    height: 12px;
+    width: 12px;
+    border-radius: 3px;
+    border: 1px solid #dedede;
+    background: #fff;
+    cursor: pointer;
+    transition: background .2s;
+    margin-top: -6px
+}
+
+.datepicker--time-row input[type=range]::-moz-range-thumb {
+    box-sizing: border-box;
+    height: 12px;
+    width: 12px;
+    border-radius: 3px;
+    border: 1px solid #dedede;
+    background: #fff;
+    cursor: pointer;
+    transition: background .2s
+}
+
+.datepicker--time-row input[type=range]::-ms-thumb {
+    box-sizing: border-box;
+    height: 12px;
+    width: 12px;
+    border-radius: 3px;
+    border: 1px solid #dedede;
+    background: #fff;
+    cursor: pointer;
+    transition: background .2s
+}
+
+.datepicker--time-row input[type=range]::-webkit-slider-runnable-track {
+    border: none;
+    height: 1px;
+    cursor: pointer;
+    color: transparent;
+    background: 0 0
+}
+
+.datepicker--time-row input[type=range]::-moz-range-track {
+    border: none;
+    height: 1px;
+    cursor: pointer;
+    color: transparent;
+    background: 0 0
+}
+
+.datepicker--time-row input[type=range]::-ms-track {
+    border: none;
+    height: 1px;
+    cursor: pointer;
+    color: transparent;
+    background: 0 0
+}
+
+.datepicker--time-row input[type=range]::-ms-fill-lower {
+    background: 0 0
+}
+
+.datepicker--time-row input[type=range]::-ms-fill-upper {
+    background: 0 0
+}
+
+.datepicker--time-row span {
+    padding: 0 12px
+}
+
+.datepicker--time-icon {
+    color: #9c9c9c;
+    border: 1px solid;
+    border-radius: 50%;
+    font-size: 16px;
+    position: relative;
+    margin: 0 5px -1px 0;
+    width: 1em;
+    height: 1em
+}
+
+.datepicker--time-icon:after,
+.datepicker--time-icon:before {
+    content: '';
+    background: currentColor;
+    position: absolute
+}
+
+.datepicker--time-icon:after {
+    height: .4em;
+    width: 1px;
+    left: calc(50% - 1px);
+    top: calc(50% + 1px);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%)
+}
+
+.datepicker--time-icon:before {
+    width: .4em;
+    height: 1px;
+    top: calc(50% + 1px);
+    left: calc(50% - 1px)
+}
+
+.datepicker--cell-day.-other-month-,
+.datepicker--cell-year.-other-decade- {
+    color: #dedede
+}
+
+.datepicker--cell-day.-other-month-:hover,
+.datepicker--cell-year.-other-decade-:hover {
+    color: #c5c5c5
+}
+
+.-disabled-.-focus-.datepicker--cell-day.-other-month-,
+.-disabled-.-focus-.datepicker--cell-year.-other-decade- {
+    color: #dedede
+}
+
+.-selected-.datepicker--cell-day.-other-month-,
+.-selected-.datepicker--cell-year.-other-decade- {
+    color: #fff;
+    background: #a2ddf6
+}
+
+.-selected-.-focus-.datepicker--cell-day.-other-month-,
+.-selected-.-focus-.datepicker--cell-year.-other-decade- {
+    background: #8ad5f4
+}
+
+.-in-range-.datepicker--cell-day.-other-month-,
+.-in-range-.datepicker--cell-year.-other-decade- {
+    background-color: rgba(92, 196, 239, .1);
+    color: #ccc
+}
+
+.-in-range-.-focus-.datepicker--cell-day.-other-month-,
+.-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+    background-color: rgba(92, 196, 239, .2)
+}
+
+.datepicker--cell-day.-other-month-:empty,
+.datepicker--cell-year.-other-decade-:empty {
+    background: 0 0;
+    border: none
+}
+
+body.compensate-for-scrollbar {
+    overflow: hidden
+}
+
+
+[data-aos][data-aos][data-aos-duration="50"],
+body[data-aos-duration="50"] [data-aos] {
+    transition-duration: 50ms
+}
+
+[data-aos][data-aos][data-aos-delay="50"],
+body[data-aos-delay="50"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="50"].aos-animate,
+body[data-aos-delay="50"] [data-aos].aos-animate {
+    transition-delay: 50ms
+}
+
+[data-aos][data-aos][data-aos-duration="100"],
+body[data-aos-duration="100"] [data-aos] {
+    transition-duration: .1s
+}
+
+[data-aos][data-aos][data-aos-delay="100"],
+body[data-aos-delay="100"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="100"].aos-animate,
+body[data-aos-delay="100"] [data-aos].aos-animate {
+    transition-delay: .1s
+}
+
+[data-aos][data-aos][data-aos-duration="150"],
+body[data-aos-duration="150"] [data-aos] {
+    transition-duration: .15s
+}
+
+[data-aos][data-aos][data-aos-delay="150"],
+body[data-aos-delay="150"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="150"].aos-animate,
+body[data-aos-delay="150"] [data-aos].aos-animate {
+    transition-delay: .15s
+}
+
+[data-aos][data-aos][data-aos-duration="200"],
+body[data-aos-duration="200"] [data-aos] {
+    transition-duration: .2s
+}
+
+[data-aos][data-aos][data-aos-delay="200"],
+body[data-aos-delay="200"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="200"].aos-animate,
+body[data-aos-delay="200"] [data-aos].aos-animate {
+    transition-delay: .2s
+}
+
+[data-aos][data-aos][data-aos-duration="250"],
+body[data-aos-duration="250"] [data-aos] {
+    transition-duration: .25s
+}
+
+[data-aos][data-aos][data-aos-delay="250"],
+body[data-aos-delay="250"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="250"].aos-animate,
+body[data-aos-delay="250"] [data-aos].aos-animate {
+    transition-delay: .25s
+}
+
+[data-aos][data-aos][data-aos-duration="300"],
+body[data-aos-duration="300"] [data-aos] {
+    transition-duration: .3s
+}
+
+[data-aos][data-aos][data-aos-delay="300"],
+body[data-aos-delay="300"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="300"].aos-animate,
+body[data-aos-delay="300"] [data-aos].aos-animate {
+    transition-delay: .3s
+}
+
+[data-aos][data-aos][data-aos-duration="350"],
+body[data-aos-duration="350"] [data-aos] {
+    transition-duration: .35s
+}
+
+[data-aos][data-aos][data-aos-delay="350"],
+body[data-aos-delay="350"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="350"].aos-animate,
+body[data-aos-delay="350"] [data-aos].aos-animate {
+    transition-delay: .35s
+}
+
+[data-aos][data-aos][data-aos-duration="400"],
+body[data-aos-duration="400"] [data-aos] {
+    transition-duration: .4s
+}
+
+[data-aos][data-aos][data-aos-delay="400"],
+body[data-aos-delay="400"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="400"].aos-animate,
+body[data-aos-delay="400"] [data-aos].aos-animate {
+    transition-delay: .4s
+}
+
+[data-aos][data-aos][data-aos-duration="450"],
+body[data-aos-duration="450"] [data-aos] {
+    transition-duration: .45s
+}
+
+[data-aos][data-aos][data-aos-delay="450"],
+body[data-aos-delay="450"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="450"].aos-animate,
+body[data-aos-delay="450"] [data-aos].aos-animate {
+    transition-delay: .45s
+}
+
+[data-aos][data-aos][data-aos-duration="500"],
+body[data-aos-duration="500"] [data-aos] {
+    transition-duration: .5s
+}
+
+[data-aos][data-aos][data-aos-delay="500"],
+body[data-aos-delay="500"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="500"].aos-animate,
+body[data-aos-delay="500"] [data-aos].aos-animate {
+    transition-delay: .5s
+}
+
+[data-aos][data-aos][data-aos-duration="550"],
+body[data-aos-duration="550"] [data-aos] {
+    transition-duration: .55s
+}
+
+[data-aos][data-aos][data-aos-delay="550"],
+body[data-aos-delay="550"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="550"].aos-animate,
+body[data-aos-delay="550"] [data-aos].aos-animate {
+    transition-delay: .55s
+}
+
+[data-aos][data-aos][data-aos-duration="600"],
+body[data-aos-duration="600"] [data-aos] {
+    transition-duration: .6s
+}
+
+[data-aos][data-aos][data-aos-delay="600"],
+body[data-aos-delay="600"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="600"].aos-animate,
+body[data-aos-delay="600"] [data-aos].aos-animate {
+    transition-delay: .6s
+}
+
+[data-aos][data-aos][data-aos-duration="650"],
+body[data-aos-duration="650"] [data-aos] {
+    transition-duration: .65s
+}
+
+[data-aos][data-aos][data-aos-delay="650"],
+body[data-aos-delay="650"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="650"].aos-animate,
+body[data-aos-delay="650"] [data-aos].aos-animate {
+    transition-delay: .65s
+}
+
+[data-aos][data-aos][data-aos-duration="700"],
+body[data-aos-duration="700"] [data-aos] {
+    transition-duration: .7s
+}
+
+[data-aos][data-aos][data-aos-delay="700"],
+body[data-aos-delay="700"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="700"].aos-animate,
+body[data-aos-delay="700"] [data-aos].aos-animate {
+    transition-delay: .7s
+}
+
+[data-aos][data-aos][data-aos-duration="750"],
+body[data-aos-duration="750"] [data-aos] {
+    transition-duration: .75s
+}
+
+[data-aos][data-aos][data-aos-delay="750"],
+body[data-aos-delay="750"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="750"].aos-animate,
+body[data-aos-delay="750"] [data-aos].aos-animate {
+    transition-delay: .75s
+}
+
+[data-aos][data-aos][data-aos-duration="800"],
+body[data-aos-duration="800"] [data-aos] {
+    transition-duration: .8s
+}
+
+[data-aos][data-aos][data-aos-delay="800"],
+body[data-aos-delay="800"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="800"].aos-animate,
+body[data-aos-delay="800"] [data-aos].aos-animate {
+    transition-delay: .8s
+}
+
+[data-aos][data-aos][data-aos-duration="850"],
+body[data-aos-duration="850"] [data-aos] {
+    transition-duration: .85s
+}
+
+[data-aos][data-aos][data-aos-delay="850"],
+body[data-aos-delay="850"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="850"].aos-animate,
+body[data-aos-delay="850"] [data-aos].aos-animate {
+    transition-delay: .85s
+}
+
+[data-aos][data-aos][data-aos-duration="900"],
+body[data-aos-duration="900"] [data-aos] {
+    transition-duration: .9s
+}
+
+[data-aos][data-aos][data-aos-delay="900"],
+body[data-aos-delay="900"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="900"].aos-animate,
+body[data-aos-delay="900"] [data-aos].aos-animate {
+    transition-delay: .9s
+}
+
+[data-aos][data-aos][data-aos-duration="950"],
+body[data-aos-duration="950"] [data-aos] {
+    transition-duration: .95s
+}
+
+[data-aos][data-aos][data-aos-delay="950"],
+body[data-aos-delay="950"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="950"].aos-animate,
+body[data-aos-delay="950"] [data-aos].aos-animate {
+    transition-delay: .95s
+}
+
+[data-aos][data-aos][data-aos-duration="1000"],
+body[data-aos-duration="1000"] [data-aos] {
+    transition-duration: 1s
+}
+
+[data-aos][data-aos][data-aos-delay="1000"],
+body[data-aos-delay="1000"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1000"].aos-animate,
+body[data-aos-delay="1000"] [data-aos].aos-animate {
+    transition-delay: 1s
+}
+
+[data-aos][data-aos][data-aos-duration="1050"],
+body[data-aos-duration="1050"] [data-aos] {
+    transition-duration: 1.05s
+}
+
+[data-aos][data-aos][data-aos-delay="1050"],
+body[data-aos-delay="1050"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1050"].aos-animate,
+body[data-aos-delay="1050"] [data-aos].aos-animate {
+    transition-delay: 1.05s
+}
+
+[data-aos][data-aos][data-aos-duration="1100"],
+body[data-aos-duration="1100"] [data-aos] {
+    transition-duration: 1.1s
+}
+
+[data-aos][data-aos][data-aos-delay="1100"],
+body[data-aos-delay="1100"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1100"].aos-animate,
+body[data-aos-delay="1100"] [data-aos].aos-animate {
+    transition-delay: 1.1s
+}
+
+[data-aos][data-aos][data-aos-duration="1150"],
+body[data-aos-duration="1150"] [data-aos] {
+    transition-duration: 1.15s
+}
+
+[data-aos][data-aos][data-aos-delay="1150"],
+body[data-aos-delay="1150"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1150"].aos-animate,
+body[data-aos-delay="1150"] [data-aos].aos-animate {
+    transition-delay: 1.15s
+}
+
+[data-aos][data-aos][data-aos-duration="1200"],
+body[data-aos-duration="1200"] [data-aos] {
+    transition-duration: 1.2s
+}
+
+[data-aos][data-aos][data-aos-delay="1200"],
+body[data-aos-delay="1200"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1200"].aos-animate,
+body[data-aos-delay="1200"] [data-aos].aos-animate {
+    transition-delay: 1.2s
+}
+
+[data-aos][data-aos][data-aos-duration="1250"],
+body[data-aos-duration="1250"] [data-aos] {
+    transition-duration: 1.25s
+}
+
+[data-aos][data-aos][data-aos-delay="1250"],
+body[data-aos-delay="1250"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1250"].aos-animate,
+body[data-aos-delay="1250"] [data-aos].aos-animate {
+    transition-delay: 1.25s
+}
+
+[data-aos][data-aos][data-aos-duration="1300"],
+body[data-aos-duration="1300"] [data-aos] {
+    transition-duration: 1.3s
+}
+
+[data-aos][data-aos][data-aos-delay="1300"],
+body[data-aos-delay="1300"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1300"].aos-animate,
+body[data-aos-delay="1300"] [data-aos].aos-animate {
+    transition-delay: 1.3s
+}
+
+[data-aos][data-aos][data-aos-duration="1350"],
+body[data-aos-duration="1350"] [data-aos] {
+    transition-duration: 1.35s
+}
+
+[data-aos][data-aos][data-aos-delay="1350"],
+body[data-aos-delay="1350"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1350"].aos-animate,
+body[data-aos-delay="1350"] [data-aos].aos-animate {
+    transition-delay: 1.35s
+}
+
+[data-aos][data-aos][data-aos-duration="1400"],
+body[data-aos-duration="1400"] [data-aos] {
+    transition-duration: 1.4s
+}
+
+[data-aos][data-aos][data-aos-delay="1400"],
+body[data-aos-delay="1400"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1400"].aos-animate,
+body[data-aos-delay="1400"] [data-aos].aos-animate {
+    transition-delay: 1.4s
+}
+
+[data-aos][data-aos][data-aos-duration="1450"],
+body[data-aos-duration="1450"] [data-aos] {
+    transition-duration: 1.45s
+}
+
+[data-aos][data-aos][data-aos-delay="1450"],
+body[data-aos-delay="1450"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1450"].aos-animate,
+body[data-aos-delay="1450"] [data-aos].aos-animate {
+    transition-delay: 1.45s
+}
+
+[data-aos][data-aos][data-aos-duration="1500"],
+body[data-aos-duration="1500"] [data-aos] {
+    transition-duration: 1.5s
+}
+
+[data-aos][data-aos][data-aos-delay="1500"],
+body[data-aos-delay="1500"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1500"].aos-animate,
+body[data-aos-delay="1500"] [data-aos].aos-animate {
+    transition-delay: 1.5s
+}
+
+[data-aos][data-aos][data-aos-duration="1550"],
+body[data-aos-duration="1550"] [data-aos] {
+    transition-duration: 1.55s
+}
+
+[data-aos][data-aos][data-aos-delay="1550"],
+body[data-aos-delay="1550"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1550"].aos-animate,
+body[data-aos-delay="1550"] [data-aos].aos-animate {
+    transition-delay: 1.55s
+}
+
+[data-aos][data-aos][data-aos-duration="1600"],
+body[data-aos-duration="1600"] [data-aos] {
+    transition-duration: 1.6s
+}
+
+[data-aos][data-aos][data-aos-delay="1600"],
+body[data-aos-delay="1600"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1600"].aos-animate,
+body[data-aos-delay="1600"] [data-aos].aos-animate {
+    transition-delay: 1.6s
+}
+
+[data-aos][data-aos][data-aos-duration="1650"],
+body[data-aos-duration="1650"] [data-aos] {
+    transition-duration: 1.65s
+}
+
+[data-aos][data-aos][data-aos-delay="1650"],
+body[data-aos-delay="1650"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1650"].aos-animate,
+body[data-aos-delay="1650"] [data-aos].aos-animate {
+    transition-delay: 1.65s
+}
+
+[data-aos][data-aos][data-aos-duration="1700"],
+body[data-aos-duration="1700"] [data-aos] {
+    transition-duration: 1.7s
+}
+
+[data-aos][data-aos][data-aos-delay="1700"],
+body[data-aos-delay="1700"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1700"].aos-animate,
+body[data-aos-delay="1700"] [data-aos].aos-animate {
+    transition-delay: 1.7s
+}
+
+[data-aos][data-aos][data-aos-duration="1750"],
+body[data-aos-duration="1750"] [data-aos] {
+    transition-duration: 1.75s
+}
+
+[data-aos][data-aos][data-aos-delay="1750"],
+body[data-aos-delay="1750"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1750"].aos-animate,
+body[data-aos-delay="1750"] [data-aos].aos-animate {
+    transition-delay: 1.75s
+}
+
+[data-aos][data-aos][data-aos-duration="1800"],
+body[data-aos-duration="1800"] [data-aos] {
+    transition-duration: 1.8s
+}
+
+[data-aos][data-aos][data-aos-delay="1800"],
+body[data-aos-delay="1800"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1800"].aos-animate,
+body[data-aos-delay="1800"] [data-aos].aos-animate {
+    transition-delay: 1.8s
+}
+
+[data-aos][data-aos][data-aos-duration="1850"],
+body[data-aos-duration="1850"] [data-aos] {
+    transition-duration: 1.85s
+}
+
+[data-aos][data-aos][data-aos-delay="1850"],
+body[data-aos-delay="1850"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1850"].aos-animate,
+body[data-aos-delay="1850"] [data-aos].aos-animate {
+    transition-delay: 1.85s
+}
+
+[data-aos][data-aos][data-aos-duration="1900"],
+body[data-aos-duration="1900"] [data-aos] {
+    transition-duration: 1.9s
+}
+
+[data-aos][data-aos][data-aos-delay="1900"],
+body[data-aos-delay="1900"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1900"].aos-animate,
+body[data-aos-delay="1900"] [data-aos].aos-animate {
+    transition-delay: 1.9s
+}
+
+[data-aos][data-aos][data-aos-duration="1950"],
+body[data-aos-duration="1950"] [data-aos] {
+    transition-duration: 1.95s
+}
+
+[data-aos][data-aos][data-aos-delay="1950"],
+body[data-aos-delay="1950"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="1950"].aos-animate,
+body[data-aos-delay="1950"] [data-aos].aos-animate {
+    transition-delay: 1.95s
+}
+
+[data-aos][data-aos][data-aos-duration="2000"],
+body[data-aos-duration="2000"] [data-aos] {
+    transition-duration: 2s
+}
+
+[data-aos][data-aos][data-aos-delay="2000"],
+body[data-aos-delay="2000"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2000"].aos-animate,
+body[data-aos-delay="2000"] [data-aos].aos-animate {
+    transition-delay: 2s
+}
+
+[data-aos][data-aos][data-aos-duration="2050"],
+body[data-aos-duration="2050"] [data-aos] {
+    transition-duration: 2.05s
+}
+
+[data-aos][data-aos][data-aos-delay="2050"],
+body[data-aos-delay="2050"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2050"].aos-animate,
+body[data-aos-delay="2050"] [data-aos].aos-animate {
+    transition-delay: 2.05s
+}
+
+[data-aos][data-aos][data-aos-duration="2100"],
+body[data-aos-duration="2100"] [data-aos] {
+    transition-duration: 2.1s
+}
+
+[data-aos][data-aos][data-aos-delay="2100"],
+body[data-aos-delay="2100"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2100"].aos-animate,
+body[data-aos-delay="2100"] [data-aos].aos-animate {
+    transition-delay: 2.1s
+}
+
+[data-aos][data-aos][data-aos-duration="2150"],
+body[data-aos-duration="2150"] [data-aos] {
+    transition-duration: 2.15s
+}
+
+[data-aos][data-aos][data-aos-delay="2150"],
+body[data-aos-delay="2150"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2150"].aos-animate,
+body[data-aos-delay="2150"] [data-aos].aos-animate {
+    transition-delay: 2.15s
+}
+
+[data-aos][data-aos][data-aos-duration="2200"],
+body[data-aos-duration="2200"] [data-aos] {
+    transition-duration: 2.2s
+}
+
+[data-aos][data-aos][data-aos-delay="2200"],
+body[data-aos-delay="2200"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2200"].aos-animate,
+body[data-aos-delay="2200"] [data-aos].aos-animate {
+    transition-delay: 2.2s
+}
+
+[data-aos][data-aos][data-aos-duration="2250"],
+body[data-aos-duration="2250"] [data-aos] {
+    transition-duration: 2.25s
+}
+
+[data-aos][data-aos][data-aos-delay="2250"],
+body[data-aos-delay="2250"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2250"].aos-animate,
+body[data-aos-delay="2250"] [data-aos].aos-animate {
+    transition-delay: 2.25s
+}
+
+[data-aos][data-aos][data-aos-duration="2300"],
+body[data-aos-duration="2300"] [data-aos] {
+    transition-duration: 2.3s
+}
+
+[data-aos][data-aos][data-aos-delay="2300"],
+body[data-aos-delay="2300"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2300"].aos-animate,
+body[data-aos-delay="2300"] [data-aos].aos-animate {
+    transition-delay: 2.3s
+}
+
+[data-aos][data-aos][data-aos-duration="2350"],
+body[data-aos-duration="2350"] [data-aos] {
+    transition-duration: 2.35s
+}
+
+[data-aos][data-aos][data-aos-delay="2350"],
+body[data-aos-delay="2350"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2350"].aos-animate,
+body[data-aos-delay="2350"] [data-aos].aos-animate {
+    transition-delay: 2.35s
+}
+
+[data-aos][data-aos][data-aos-duration="2400"],
+body[data-aos-duration="2400"] [data-aos] {
+    transition-duration: 2.4s
+}
+
+[data-aos][data-aos][data-aos-delay="2400"],
+body[data-aos-delay="2400"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2400"].aos-animate,
+body[data-aos-delay="2400"] [data-aos].aos-animate {
+    transition-delay: 2.4s
+}
+
+[data-aos][data-aos][data-aos-duration="2450"],
+body[data-aos-duration="2450"] [data-aos] {
+    transition-duration: 2.45s
+}
+
+[data-aos][data-aos][data-aos-delay="2450"],
+body[data-aos-delay="2450"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2450"].aos-animate,
+body[data-aos-delay="2450"] [data-aos].aos-animate {
+    transition-delay: 2.45s
+}
+
+[data-aos][data-aos][data-aos-duration="2500"],
+body[data-aos-duration="2500"] [data-aos] {
+    transition-duration: 2.5s
+}
+
+[data-aos][data-aos][data-aos-delay="2500"],
+body[data-aos-delay="2500"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2500"].aos-animate,
+body[data-aos-delay="2500"] [data-aos].aos-animate {
+    transition-delay: 2.5s
+}
+
+[data-aos][data-aos][data-aos-duration="2550"],
+body[data-aos-duration="2550"] [data-aos] {
+    transition-duration: 2.55s
+}
+
+[data-aos][data-aos][data-aos-delay="2550"],
+body[data-aos-delay="2550"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2550"].aos-animate,
+body[data-aos-delay="2550"] [data-aos].aos-animate {
+    transition-delay: 2.55s
+}
+
+[data-aos][data-aos][data-aos-duration="2600"],
+body[data-aos-duration="2600"] [data-aos] {
+    transition-duration: 2.6s
+}
+
+[data-aos][data-aos][data-aos-delay="2600"],
+body[data-aos-delay="2600"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2600"].aos-animate,
+body[data-aos-delay="2600"] [data-aos].aos-animate {
+    transition-delay: 2.6s
+}
+
+[data-aos][data-aos][data-aos-duration="2650"],
+body[data-aos-duration="2650"] [data-aos] {
+    transition-duration: 2.65s
+}
+
+[data-aos][data-aos][data-aos-delay="2650"],
+body[data-aos-delay="2650"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2650"].aos-animate,
+body[data-aos-delay="2650"] [data-aos].aos-animate {
+    transition-delay: 2.65s
+}
+
+[data-aos][data-aos][data-aos-duration="2700"],
+body[data-aos-duration="2700"] [data-aos] {
+    transition-duration: 2.7s
+}
+
+[data-aos][data-aos][data-aos-delay="2700"],
+body[data-aos-delay="2700"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2700"].aos-animate,
+body[data-aos-delay="2700"] [data-aos].aos-animate {
+    transition-delay: 2.7s
+}
+
+[data-aos][data-aos][data-aos-duration="2750"],
+body[data-aos-duration="2750"] [data-aos] {
+    transition-duration: 2.75s
+}
+
+[data-aos][data-aos][data-aos-delay="2750"],
+body[data-aos-delay="2750"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2750"].aos-animate,
+body[data-aos-delay="2750"] [data-aos].aos-animate {
+    transition-delay: 2.75s
+}
+
+[data-aos][data-aos][data-aos-duration="2800"],
+body[data-aos-duration="2800"] [data-aos] {
+    transition-duration: 2.8s
+}
+
+[data-aos][data-aos][data-aos-delay="2800"],
+body[data-aos-delay="2800"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2800"].aos-animate,
+body[data-aos-delay="2800"] [data-aos].aos-animate {
+    transition-delay: 2.8s
+}
+
+[data-aos][data-aos][data-aos-duration="2850"],
+body[data-aos-duration="2850"] [data-aos] {
+    transition-duration: 2.85s
+}
+
+[data-aos][data-aos][data-aos-delay="2850"],
+body[data-aos-delay="2850"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2850"].aos-animate,
+body[data-aos-delay="2850"] [data-aos].aos-animate {
+    transition-delay: 2.85s
+}
+
+[data-aos][data-aos][data-aos-duration="2900"],
+body[data-aos-duration="2900"] [data-aos] {
+    transition-duration: 2.9s
+}
+
+[data-aos][data-aos][data-aos-delay="2900"],
+body[data-aos-delay="2900"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2900"].aos-animate,
+body[data-aos-delay="2900"] [data-aos].aos-animate {
+    transition-delay: 2.9s
+}
+
+[data-aos][data-aos][data-aos-duration="2950"],
+body[data-aos-duration="2950"] [data-aos] {
+    transition-duration: 2.95s
+}
+
+[data-aos][data-aos][data-aos-delay="2950"],
+body[data-aos-delay="2950"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="2950"].aos-animate,
+body[data-aos-delay="2950"] [data-aos].aos-animate {
+    transition-delay: 2.95s
+}
+
+[data-aos][data-aos][data-aos-duration="3000"],
+body[data-aos-duration="3000"] [data-aos] {
+    transition-duration: 3s
+}
+
+[data-aos][data-aos][data-aos-delay="3000"],
+body[data-aos-delay="3000"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="3000"].aos-animate,
+body[data-aos-delay="3000"] [data-aos].aos-animate {
+    transition-delay: 3s
+}
+
+[data-aos][data-aos][data-aos-easing=linear],
+body[data-aos-easing=linear] [data-aos] {
+    transition-timing-function: cubic-bezier(.25, .25, .75, .75)
+}
+
+[data-aos][data-aos][data-aos-easing=ease],
+body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease
+}
+
+[data-aos][data-aos][data-aos-easing=ease-in],
+body[data-aos-easing=ease-in] [data-aos] {
+    transition-timing-function: ease-in
+}
+
+[data-aos][data-aos][data-aos-easing=ease-out],
+body[data-aos-easing=ease-out] [data-aos] {
+    transition-timing-function: ease-out
+}
+
+[data-aos][data-aos][data-aos-easing=ease-in-out],
+body[data-aos-easing=ease-in-out] [data-aos] {
+    transition-timing-function: ease-in-out
+}
+
+[data-aos][data-aos][data-aos-easing=ease-in-back],
+body[data-aos-easing=ease-in-back] [data-aos] {
+    transition-timing-function: cubic-bezier(.6, -.28, .735, .045)
+}
+
+[data-aos][data-aos][data-aos-easing=ease-out-back],
+body[data-aos-easing=ease-out-back] [data-aos] {
+    transition-timing-function: cubic-bezier(.175, .885, .32, 1.275)
+}
+
+[data-aos][data-aos][data-aos-easing=ease-in-out-back],
+body[data-aos-easing=ease-in-out-back] [data-aos] {
+    transition-timing-function: cubic-bezier(.68, -.55, .265, 1.55)
+}
+
+[data-aos][data-aos][data-aos-easing=ease-in-sine],
+body[data-aos-easing=ease-in-sine] [data-aos] {
+    transition-timing-function: cubic-bezier(.47, 0, .745, .715)
+}
+
+[data-aos][data-aos][data-aos-easing=ease-out-sine],
+body[data-aos-easing=ease-out-sine] [data-aos] {
+    transition-timing-function: cubic-bezier(.39, .575, .565, 1)
+}
+
+[data-aos][data-aos][data-aos-easing=ease-in-out-sine],
+body[data-aos-easing=ease-in-out-sine] [data-aos] {
+    transition-timing-function: cubic-bezier(.445, .05, .55, .95)
+}
+
+[data-aos][data-aos][data-aos-easing=ease-in-quad],
+body[data-aos-easing=ease-in-quad] [data-aos] {
+    transition-timing-function: cubic-bezier(.55, .085, .68, .53)
+}
+
+[data-aos][data-aos][data-aos-easing=ease-out-quad],
+body[data-aos-easing=ease-out-quad] [data-aos] {
+    transition-timing-function: cubic-bezier(.25, .46, .45, .94)
+}
+
+[data-aos][data-aos][data-aos-easing=ease-in-out-quad],
+body[data-aos-easing=ease-in-out-quad] [data-aos] {
+    transition-timing-function: cubic-bezier(.455, .03, .515, .955)
+}
+
+[data-aos][data-aos][data-aos-easing=ease-in-cubic],
+body[data-aos-easing=ease-in-cubic] [data-aos] {
+    transition-timing-function: cubic-bezier(.55, .085, .68, .53)
+}
+
+[data-aos][data-aos][data-aos-easing=ease-out-cubic],
+body[data-aos-easing=ease-out-cubic] [data-aos] {
+    transition-timing-function: cubic-bezier(.25, .46, .45, .94)
+}
+
+[data-aos][data-aos][data-aos-easing=ease-in-out-cubic],
+body[data-aos-easing=ease-in-out-cubic] [data-aos] {
+    transition-timing-function: cubic-bezier(.455, .03, .515, .955)
+}
+
+[data-aos][data-aos][data-aos-easing=ease-in-quart],
+body[data-aos-easing=ease-in-quart] [data-aos] {
+    transition-timing-function: cubic-bezier(.55, .085, .68, .53)
+}
+
+[data-aos][data-aos][data-aos-easing=ease-out-quart],
+body[data-aos-easing=ease-out-quart] [data-aos] {
+    transition-timing-function: cubic-bezier(.25, .46, .45, .94)
+}
+
+[data-aos][data-aos][data-aos-easing=ease-in-out-quart],
+body[data-aos-easing=ease-in-out-quart] [data-aos] {
+    transition-timing-function: cubic-bezier(.455, .03, .515, .955)
+}
+
+[data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity, transform
+}
+
+[data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translateZ(0)
+}
+
+[data-aos=fade-up] {
+    transform: translate3d(0, 100px, 0)
+}
+
+[data-aos=fade-down] {
+    transform: translate3d(0, -100px, 0)
+}
+
+[data-aos=fade-right] {
+    transform: translate3d(-100px, 0, 0)
+}
+
+[data-aos=fade-left] {
+    transform: translate3d(100px, 0, 0)
+}
+
+[data-aos=fade-up-right] {
+    transform: translate3d(-100px, 100px, 0)
+}
+
+[data-aos=fade-up-left] {
+    transform: translate3d(100px, 100px, 0)
+}
+
+[data-aos=fade-down-right] {
+    transform: translate3d(-100px, -100px, 0)
+}
+
+[data-aos=fade-down-left] {
+    transform: translate3d(100px, -100px, 0)
+}
+
+[data-aos^=zoom][data-aos^=zoom] {
+    opacity: 0;
+    transition-property: opacity, transform
+}
+
+[data-aos^=zoom][data-aos^=zoom].aos-animate {
+    opacity: 1;
+    transform: translateZ(0) scale(1)
+}
+
+[data-aos=zoom-in] {
+    transform: scale(.6)
+}
+
+[data-aos=zoom-in-up] {
+    transform: translate3d(0, 100px, 0) scale(.6)
+}
+
+[data-aos=zoom-in-down] {
+    transform: translate3d(0, -100px, 0) scale(.6)
+}
+
+[data-aos=zoom-in-right] {
+    transform: translate3d(-100px, 0, 0) scale(.6)
+}
+
+[data-aos=zoom-in-left] {
+    transform: translate3d(100px, 0, 0) scale(.6)
+}
+
+[data-aos=zoom-out] {
+    transform: scale(1.2)
+}
+
+[data-aos=zoom-out-up] {
+    transform: translate3d(0, 100px, 0) scale(1.2)
+}
+
+[data-aos=zoom-out-down] {
+    transform: translate3d(0, -100px, 0) scale(1.2)
+}
+
+[data-aos=zoom-out-right] {
+    transform: translate3d(-100px, 0, 0) scale(1.2)
+}
+
+[data-aos=zoom-out-left] {
+    transform: translate3d(100px, 0, 0) scale(1.2)
+}
+
+[data-aos^=slide][data-aos^=slide] {
+    transition-property: transform
+}
+
+[data-aos^=slide][data-aos^=slide].aos-animate {
+    transform: translateZ(0)
+}
+
+[data-aos=slide-up] {
+    transform: translate3d(0, 100%, 0)
+}
+
+[data-aos=slide-down] {
+    transform: translate3d(0, -100%, 0)
+}
+
+[data-aos=slide-right] {
+    transform: translate3d(-100%, 0, 0)
+}
+
+[data-aos=slide-left] {
+    transform: translate3d(100%, 0, 0)
+}
+
+[data-aos^=flip][data-aos^=flip] {
+    backface-visibility: hidden;
+    transition-property: transform
+}
+
+[data-aos=flip-left] {
+    transform: perspective(2500px) rotateY(-100deg)
+}
+
+[data-aos=flip-left].aos-animate {
+    transform: perspective(2500px) rotateY(0)
+}
+
+[data-aos=flip-right] {
+    transform: perspective(2500px) rotateY(100deg)
+}
+
+[data-aos=flip-right].aos-animate {
+    transform: perspective(2500px) rotateY(0)
+}
+
+[data-aos=flip-up] {
+    transform: perspective(2500px) rotateX(-100deg)
+}
+
+[data-aos=flip-up].aos-animate {
+    transform: perspective(2500px) rotateX(0)
+}
+
+[data-aos=flip-down] {
+    transform: perspective(2500px) rotateX(100deg)
+}
+
+[data-aos=flip-down].aos-animate {
+    transform: perspective(2500px) rotateX(0)
+}
+
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1
+}
+
+.swiper-container-no-flexbox .swiper-slide {
+    float: left
+}
+
+.swiper-container-vertical>.swiper-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.swiper-container-android .swiper-slide,
+.swiper-wrapper {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.swiper-container-multirow>.swiper-wrapper {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.swiper-container-free-mode>.swiper-wrapper {
+    -webkit-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    margin: 0 auto
+}
+
+.swiper-slide {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+}
+
+.swiper-invisible-blank-slide {
+    visibility: hidden
+}
+
+.swiper-container-autoheight,
+.swiper-container-autoheight .swiper-slide {
+    height: auto
+}
+
+.swiper-container-autoheight .swiper-wrapper {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-transition-property: height, -webkit-transform;
+    transition-property: height, -webkit-transform;
+    -o-transition-property: transform, height;
+    transition-property: transform, height;
+    transition-property: transform, height, -webkit-transform
+}
+
+.swiper-container-3d {
+    -webkit-perspective: 1200px;
+    perspective: 1200px
+}
+
+.swiper-container-3d .swiper-cube-shadow,
+.swiper-container-3d .swiper-slide,
+.swiper-container-3d .swiper-slide-shadow-bottom,
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-top,
+.swiper-container-3d .swiper-wrapper {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d
+}
+
+.swiper-container-3d .swiper-slide-shadow-bottom,
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10
+}
+
+.swiper-container-3d .swiper-slide-shadow-left {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+}
+
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+}
+
+.swiper-container-3d .swiper-slide-shadow-top {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+}
+
+.swiper-container-3d .swiper-slide-shadow-bottom {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+}
+
+.swiper-container-wp8-horizontal,
+.swiper-container-wp8-horizontal>.swiper-wrapper {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y
+}
+
+.swiper-container-wp8-vertical,
+.swiper-container-wp8-vertical>.swiper-wrapper {
+    -ms-touch-action: pan-x;
+    touch-action: pan-x
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: 27px 44px;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+    left: 10px;
+    right: auto
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+    right: 10px;
+    left: auto
+}
+
+.swiper-button-prev.swiper-button-white,
+.swiper-container-rtl .swiper-button-next.swiper-button-white {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")
+}
+
+.swiper-button-next.swiper-button-white,
+.swiper-container-rtl .swiper-button-prev.swiper-button-white {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")
+}
+
+.swiper-button-prev.swiper-button-black,
+.swiper-container-rtl .swiper-button-next.swiper-button-black {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E")
+}
+
+.swiper-button-next.swiper-button-black,
+.swiper-container-rtl .swiper-button-prev.swiper-button-black {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E")
+}
+
+.swiper-button-lock {
+    display: none
+}
+
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    -webkit-transition: .3s opacity;
+    -o-transition: .3s opacity;
+    transition: .3s opacity;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 10
+}
+
+.swiper-pagination.swiper-pagination-hidden {
+    opacity: 0
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 100%
+}
+
+.swiper-pagination-bullets-dynamic {
+    overflow: hidden;
+    font-size: 0
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+    -webkit-transform: scale(.33);
+    -ms-transform: scale(.33);
+    transform: scale(.33);
+    position: relative
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
+    -webkit-transform: scale(.66);
+    -ms-transform: scale(.66);
+    transform: scale(.66)
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
+    -webkit-transform: scale(.33);
+    -ms-transform: scale(.33);
+    transform: scale(.33)
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
+    -webkit-transform: scale(.66);
+    -ms-transform: scale(.66);
+    transform: scale(.66)
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
+    -webkit-transform: scale(.33);
+    -ms-transform: scale(.33);
+    transform: scale(.33)
+}
+
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: .2
+}
+
+button.swiper-pagination-bullet {
+    border: none;
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #007aff
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets {
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0)
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 6px 0;
+    display: block
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 8px
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+    display: inline-block;
+    -webkit-transition: .2s top, .2s -webkit-transform;
+    transition: .2s top, .2s -webkit-transform;
+    -o-transition: .2s transform, .2s top;
+    transition: .2s transform, .2s top;
+    transition: .2s transform, .2s top, .2s -webkit-transform
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 4px
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    white-space: nowrap
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+    -webkit-transition: .2s left, .2s -webkit-transform;
+    transition: .2s left, .2s -webkit-transform;
+    -o-transition: .2s transform, .2s left;
+    transition: .2s transform, .2s left;
+    transition: .2s transform, .2s left, .2s -webkit-transform
+}
+
+.swiper-container-horizontal.swiper-container-rtl>.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+    -webkit-transition: .2s right, .2s -webkit-transform;
+    transition: .2s right, .2s -webkit-transform;
+    -o-transition: .2s transform, .2s right;
+    transition: .2s transform, .2s right;
+    transition: .2s transform, .2s right, .2s -webkit-transform
+}
+
+.swiper-pagination-progressbar {
+    background: rgba(0, 0, 0, .25);
+    position: absolute
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #007aff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top
+}
+
+.swiper-container-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top
+}
+
+.swiper-container-horizontal>.swiper-pagination-progressbar {
+    width: 100%;
+    height: 4px;
+    left: 0;
+    top: 0
+}
+
+.swiper-container-vertical>.swiper-pagination-progressbar {
+    width: 4px;
+    height: 100%;
+    left: 0;
+    top: 0
+}
+
+.swiper-pagination-white .swiper-pagination-bullet-active {
+    background: #fff
+}
+
+.swiper-pagination-progressbar.swiper-pagination-white {
+    background: rgba(255, 255, 255, .25)
+}
+
+.swiper-pagination-progressbar.swiper-pagination-white .swiper-pagination-progressbar-fill {
+    background: #fff
+}
+
+.swiper-pagination-black .swiper-pagination-bullet-active {
+    background: #000
+}
+
+.swiper-pagination-progressbar.swiper-pagination-black {
+    background: rgba(0, 0, 0, .25)
+}
+
+.swiper-pagination-progressbar.swiper-pagination-black .swiper-pagination-progressbar-fill {
+    background: #000
+}
+
+.swiper-pagination-lock {
+    display: none
+}
+
+.swiper-scrollbar {
+    border-radius: 10px;
+    position: relative;
+    -ms-touch-action: none;
+    background: rgba(0, 0, 0, .1)
+}
+
+.swiper-container-horizontal>.swiper-scrollbar {
+    position: absolute;
+    left: 1%;
+    bottom: 3px;
+    z-index: 50;
+    height: 5px;
+    width: 98%
+}
+
+.swiper-container-vertical>.swiper-scrollbar {
+    position: absolute;
+    right: 3px;
+    top: 1%;
+    z-index: 50;
+    width: 5px;
+    height: 98%
+}
+
+.swiper-scrollbar-drag {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    left: 0;
+    top: 0
+}
+
+.swiper-scrollbar-cursor-drag {
+    cursor: move
+}
+
+.swiper-scrollbar-lock {
+    display: none
+}
+
+.swiper-zoom-container {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center
+}
+
+.swiper-zoom-container>canvas,
+.swiper-zoom-container>img,
+.swiper-zoom-container>svg {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.swiper-slide-zoomed {
+    cursor: move
+}
+
+.swiper-lazy-preloader {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -21px;
+    margin-top: -21px;
+    z-index: 10;
+    -webkit-transform-origin: 50%;
+    -ms-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-animation: swiper-preloader-spin 1s steps(12, end) infinite;
+    animation: swiper-preloader-spin 1s steps(12, end) infinite
+}
+
+.swiper-lazy-preloader:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%236c6c6c'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-position: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.swiper-lazy-preloader-white:after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%23fff'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+@-webkit-keyframes swiper-preloader-spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes swiper-preloader-spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.swiper-container .swiper-notification {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    opacity: 0;
+    z-index: -1000
+}
+
+.swiper-container-fade.swiper-container-free-mode .swiper-slide {
+    -webkit-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out
+}
+
+.swiper-container-fade .swiper-slide {
+    pointer-events: none;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity
+}
+
+.swiper-container-fade .swiper-slide .swiper-slide {
+    pointer-events: none
+}
+
+.swiper-container-fade .swiper-slide-active,
+.swiper-container-fade .swiper-slide-active .swiper-slide-active {
+    pointer-events: auto
+}
+
+.swiper-container-cube {
+    overflow: visible
+}
+
+.swiper-container-cube .swiper-slide {
+    pointer-events: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 1;
+    visibility: hidden;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    width: 100%;
+    height: 100%
+}
+
+.swiper-container-cube .swiper-slide .swiper-slide {
+    pointer-events: none
+}
+
+.swiper-container-cube.swiper-container-rtl .swiper-slide {
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0
+}
+
+.swiper-container-cube .swiper-slide-active,
+.swiper-container-cube .swiper-slide-active .swiper-slide-active {
+    pointer-events: auto
+}
+
+.swiper-container-cube .swiper-slide-active,
+.swiper-container-cube .swiper-slide-next,
+.swiper-container-cube .swiper-slide-next+.swiper-slide,
+.swiper-container-cube .swiper-slide-prev {
+    pointer-events: auto;
+    visibility: visible
+}
+
+.swiper-container-cube .swiper-slide-shadow-bottom,
+.swiper-container-cube .swiper-slide-shadow-left,
+.swiper-container-cube .swiper-slide-shadow-right,
+.swiper-container-cube .swiper-slide-shadow-top {
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.swiper-container-cube .swiper-cube-shadow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .6;
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    z-index: 0
+}
+
+.swiper-container-flip {
+    overflow: visible
+}
+
+.swiper-container-flip .swiper-slide {
+    pointer-events: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 1
+}
+
+.swiper-container-flip .swiper-slide .swiper-slide {
+    pointer-events: none
+}
+
+.swiper-container-flip .swiper-slide-active,
+.swiper-container-flip .swiper-slide-active .swiper-slide-active {
+    pointer-events: auto
+}
+
+.swiper-container-flip .swiper-slide-shadow-bottom,
+.swiper-container-flip .swiper-slide-shadow-left,
+.swiper-container-flip .swiper-slide-shadow-right,
+.swiper-container-flip .swiper-slide-shadow-top {
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.swiper-container-coverflow .swiper-wrapper {
+    -ms-perspective: 1200px
+}
+
+[ui-pnotify].ui-pnotify .brighttheme {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+[ui-pnotify].ui-pnotify .brighttheme.ui-pnotify-container {
+    padding: 1.3rem
+}
+
+[ui-pnotify].ui-pnotify-with-icon .brighttheme .ui-pnotify-confirm,
+[ui-pnotify].ui-pnotify-with-icon .brighttheme .ui-pnotify-text,
+[ui-pnotify].ui-pnotify-with-icon .brighttheme .ui-pnotify-title {
+    margin-left: 1.8rem
+}
+
+[dir=rtl] [ui-pnotify].ui-pnotify-with-icon .brighttheme .ui-pnotify-confirm,
+[dir=rtl] [ui-pnotify].ui-pnotify-with-icon .brighttheme .ui-pnotify-text,
+[dir=rtl] [ui-pnotify].ui-pnotify-with-icon .brighttheme .ui-pnotify-title {
+    margin-right: 1.8rem;
+    margin-left: 0
+}
+
+[ui-pnotify].ui-pnotify .brighttheme .ui-pnotify-title {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-top: -.2rem;
+    margin-bottom: 1rem
+}
+
+[ui-pnotify].ui-pnotify .brighttheme .ui-pnotify-text {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-top: 0
+}
+
+[ui-pnotify].ui-pnotify .brighttheme .ui-pnotify-icon {
+    line-height: 1
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-notice {
+    background-color: #ffffa2;
+    border: 0 solid #ff0
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-notice div,
+[ui-pnotify].ui-pnotify .brighttheme-notice h4 {
+    color: #4f4f00
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-info {
+    background-color: #8fcedd;
+    border: 0 solid #0286a5
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-info div,
+[ui-pnotify].ui-pnotify .brighttheme-info h4 {
+    color: #012831
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-success {
+    background-color: #aff29a;
+    border: 0 solid #35db00
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-success div,
+[ui-pnotify].ui-pnotify .brighttheme-success h4 {
+    color: #104300
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-error {
+    background-color: #ffaba2;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 35px, rgba(255, 255, 255, .3) 35px, rgba(255, 255, 255, .3) 70px);
+    border: 0 solid #ff1800
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-error div,
+[ui-pnotify].ui-pnotify .brighttheme-error h4 {
+    color: #4f0800
+}
+
+[ui-pnotify].ui-pnotify .brighttheme .ui-pnotify-closer,
+[ui-pnotify].ui-pnotify .brighttheme .ui-pnotify-sticker {
+    font-size: 1rem;
+    line-height: 1.2rem
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-icon-closer,
+[ui-pnotify].ui-pnotify .brighttheme-icon-error,
+[ui-pnotify].ui-pnotify .brighttheme-icon-info,
+[ui-pnotify].ui-pnotify .brighttheme-icon-notice,
+[ui-pnotify].ui-pnotify .brighttheme-icon-sticker,
+[ui-pnotify].ui-pnotify .brighttheme-icon-success {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1rem;
+    font-family: "Courier New", Courier, monospace;
+    border-radius: 50%
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-icon-closer:after,
+[ui-pnotify].ui-pnotify .brighttheme-icon-info:after,
+[ui-pnotify].ui-pnotify .brighttheme-icon-notice:after,
+[ui-pnotify].ui-pnotify .brighttheme-icon-sticker:after,
+[ui-pnotify].ui-pnotify .brighttheme-icon-success:after {
+    position: absolute;
+    top: 0;
+    left: .2rem
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-icon-notice {
+    background-color: #2e2e00;
+    color: #ffffa2
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-icon-notice:after {
+    content: "!"
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-icon-info {
+    background-color: #012831;
+    color: #8fcedd
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-icon-info:after {
+    content: "i"
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-icon-success {
+    background-color: #104300;
+    color: #aff29a
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-icon-success:after {
+    content: "\002713"
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-icon-error {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    border-radius: 0;
+    border-left: .6rem solid transparent;
+    border-right: .6rem solid transparent;
+    border-bottom: 1.2rem solid #2e0400;
+    color: #ffaba2
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-icon-error:after {
+    position: absolute;
+    top: .1rem;
+    left: -.25rem;
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    font-family: "Courier New", Courier, monospace;
+    content: "!"
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-icon-closer,
+[ui-pnotify].ui-pnotify .brighttheme-icon-sticker {
+    display: inline-block
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-icon-closer:after {
+    content: "\002715"
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-icon-sticker:after {
+    top: -1px;
+    content: "\002016"
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-icon-sticker.brighttheme-icon-stuck:after {
+    content: "\00003E"
+}
+
+[ui-pnotify].ui-pnotify .brighttheme .ui-pnotify-confirm {
+    margin-top: 1rem
+}
+
+[ui-pnotify].ui-pnotify .brighttheme .ui-pnotify-prompt-bar {
+    margin-bottom: 1rem
+}
+
+[ui-pnotify].ui-pnotify .brighttheme .ui-pnotify-action-button {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .4rem 1rem;
+    border: none;
+    background: 0 0;
+    cursor: pointer
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-notice .ui-pnotify-action-button.brighttheme-primary {
+    background-color: #ff0;
+    color: #4f4f00
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-info .ui-pnotify-action-button.brighttheme-primary {
+    background-color: #0286a5;
+    color: #012831
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-success .ui-pnotify-action-button.brighttheme-primary {
+    background-color: #35db00;
+    color: #104300
+}
+
+[ui-pnotify].ui-pnotify .brighttheme-error .ui-pnotify-action-button.brighttheme-primary {
+    background-color: #ff1800;
+    color: #4f0800
+}

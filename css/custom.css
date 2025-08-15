@@ -1,0 +1,16 @@
+.sunsets-program__title {
+    font-family: graphik lcg;
+    font-weight: 300!important;
+}
+.sunsets-program__title p {
+    font-family: graphik lcg;
+    font-weight: 300!important;
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 139%;
+}
+
+.news__items{}
+.news__items .title__name h2{text-transorm:uppercase;}
+.content__section img{margin-left:10px;}
+.content-block__more:empty{display:none;}

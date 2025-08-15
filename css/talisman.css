@@ -1,0 +1,4286 @@
+.talisman-page .section__inner.general-section.general-section_showcase.general-section_showcase_h>.grid__content {
+    height: 700px;
+}
+
+.talisman-page .general-section__item_text {
+    padding: 0;
+}
+
+.talisman-page .general-section__item_title {
+    margin-top: 0;
+    width: auto;
+    margin-right: 82px;
+    max-width: 50%;
+}
+
+.talisman-page .section__inner.general-section.general-section_showcase.general-section_showcase_h .general-section__item_text {
+    width: auto;
+}
+.tal_pp_image img {
+    max-width: 100%;
+}
+.tal_pp_image  {
+    margin-bottom: 40px;
+}
+.talisman-page .section__inner.general-section.general-section_showcase.general-section_showcase_h .general-section__item_text h1 {
+    font-size: 52px;
+    line-height: 70px;
+}
+
+.talisman-page .showcase-buttons__row:nth-child(1) {
+    padding-bottom: 0;
+    border-bottom: unset;
+}
+
+.talisman-page .showcase-buttons__row>.go_down_in_history {
+    margin-top: 0;
+}
+
+.talisman-page .showcase_buttons {
+    margin-top: 70px;
+}
+
+.talisman-stages {
+    margin-top: 66px;
+}
+
+.talisman-stages__tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    margin-bottom: 60px;
+}
+.november_pic_right_text a {
+    color: #e30613;
+}
+.talisman-stages__tabs_item {
+    position: relative;
+    font-family: 'Platform';
+    font-weight: normal;
+    font-size: 32px;
+    color: #dddddd;
+
+    padding-right: 55px;
+    padding-bottom: 30px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.talisman-stages__tabs_item:last-child {
+    padding-right: 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -moz-box-flex: 1;
+    flex: 1 1 auto;
+}
+
+.talisman-stages__tabs_item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #dddddd;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+}
+
+.talisman-stages__tabs_item.active {
+    color: #433DE9;
+}
+
+.talisman-stages__tabs_item.active::before {
+    background-color: #433DE9;
+}
+
+.talisman-stages__content {
+    min-height: 325px;
+    margin-bottom: 100px;
+}
+
+.talisman-stages__content_item:not(.active) {
+    /* display: none; */
+}
+
+.talisman-stages__content_item .item-box {
+    min-height: 325px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+}
+
+.talisman-content-item__left_name>span:first-child {
+    font-family: 'Platform';
+    font-weight: normal;
+    font-size: 100px;
+    color: #dddddd;
+    /* -webkit-text-stroke: 2px hsla(38, 30%, 85%, 0.7); */
+    /* -webkit-text-fill-color: transparent; */
+    margin-bottom: 30px;
+    margin-top: -16px;
+    display: block;
+
+}
+.talisman-stages.yards-edition .talisman-stages__content_item[data-tab="4"] .talisman-content-item__left_name span {
+    color: rgba(42, 50, 131, 1);
+}
+
+.talisman-content-item__left,
+.talisman-content-item__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    align-items: flex-start;
+}
+
+.talisman-content-item__left_name>span:last-child {
+    font-family: 'Graphik LCG';
+    font-weight: 600;
+    font-size: 24px;
+    color: #dddddd;
+    display: block;
+}
+
+.talisman-content-item__left_status {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    border: 2px solid #F3F3F3;
+    -webkit-border-radius: 652.893px;
+    -moz-border-radius: 652.893px;
+    border-radius: 652.893px;
+    margin-top: 52px;
+}
+
+.status__img {
+    width: 50px;
+    height: 50px;
+    background-color: #161310;
+    background-image: url(../images/waiting.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: 14px 18px;
+    -moz-background-size: 14px 18px;
+    -o-background-size: 14px 18px;
+    background-size: 14px 18px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.status__text {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 110%;
+    padding: 15px 30px;
+}
+
+.talisman-content-item__right {
+    width: 50%;
+}
+
+.talisman-content-item__right_descr>span:first-child {
+    font-family: 'Platform';
+    font-weight: normal;
+    font-size: 42px;
+    /* line-height: 70px; */
+    display: block;
+    margin-bottom: 35px;
+}
+
+.talisman-content-item__right_descr>span:last-child {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 142.34%;
+    color: rgba(22, 19, 16, 0.9);
+    display: block;
+}
+
+.talisman-content-item__right .go_down_in_history .addnew_img {
+    width: 50px;
+    height: 50px;
+}
+
+.talisman-stages__content_item.active .talisman-content-item__left_name>span:first-child {
+    -webkit-text-stroke: initial;
+    -webkit-text-fill-color: initial;
+}
+.talisman-single-box.stage-2 {
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+.talisman-single-box.stage-2 .talisman-stage-waiting {
+    margin-bottom: 100px;
+}
+.talisman-stages__content_item.active .talisman-content-item__left_name>span:first-child,
+.talisman-stages__content_item.active .talisman-content-item__left_name>span:last-child,
+.talisman-stages__content_item.active .status__text {
+    color: #433DE9 !important;
+}
+
+.talisman-stages__content_item.active .status__img {
+    background-color: #433DE9;
+}
+
+.talisman-single-page .section__inner.general-section.general-section_showcase.general-section_showcase_h>.grid__content {
+    height: auto;
+    margin-top: 200px;
+    min-height: 0;
+    margin-bottom: 70px;
+}
+
+.talisman-single-page .section__inner.general-section.general-section_showcase.general-section_showcase_h .general-section__item.general-section__item_color-dark {
+    display: block;
+}
+
+.talisman-single-page .general-section__item_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+}
+
+.general-section__item_buttons {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.talisman-single-page .general-section__item_title {
+    width: auto;
+}
+
+.talisman-single-page .section__inner.general-section.general-section_showcase.general-section_showcase_h .general-section__item_text {
+    padding: 0;
+    width: 47.5%;
+}
+
+.talisman-single-page .talisman-content-item__left {
+    height: 100%;
+}
+
+.talisman-single-page .section__inner.general-section.general-section_showcase.general-section_showcase_h .general-section__item_text h1 {
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.talisman-single-page .talisman-content-item__left.active .talisman-content-item__left_name>span:first-child {
+    -webkit-text-stroke: initial;
+    -webkit-text-fill-color: initial;
+}
+
+.talisman-single-page .talisman-content-item__left.active .talisman-content-item__left_name>span:first-child,
+.talisman-single-page .talisman-content-item__left.active .talisman-content-item__left_name>span:last-child,
+.talisman-single-page .talisman-content-item__left.active .status__text {
+    color: #F37320;
+}
+
+.talisman-single-page .talisman-content-item__left.active .status__img {
+    background-color: #F37320;
+    background-image: url(../images/active.svg);
+    -webkit-background-size: 26px 26px;
+    -moz-background-size: 26px 26px;
+    -o-background-size: 26px 26px;
+    background-size: 26px 26px;
+
+}
+
+.talisman-single-page .talisman-content-item__left.end .talisman-content-item__left_name>span:first-child {
+    -webkit-text-stroke: initial;
+    -webkit-text-fill-color: initial;
+}
+
+.talisman-single-page .talisman-content-item__left.end .talisman-content-item__left_name>span:first-child,
+.talisman-single-page .talisman-content-item__left.end .talisman-content-item__left_name>span:last-child,
+.talisman-single-page .talisman-content-item__left.active .status__text {
+    color: #161310;
+}
+
+.talisman-single-page .talisman-content-item__left.end .status__img {
+    background-image: url(../images/finished.svg);
+    -webkit-background-size: 26px 26px;
+    -moz-background-size: 26px 26px;
+    -o-background-size: 26px 26px;
+    background-size: 26px 26px;
+
+}
+
+
+
+.talisman-single-page .talisman-content-item__left_status {
+    background-color: white;
+    border: none;
+}
+
+.general-section__item_buttons .interaction__button {
+    color: initial;
+}
+
+.general-section__item_buttons .interaction__button::before {
+    background-color: #F1ECE5;
+}
+
+
+.general-section__item_buttons .interaction__button:last-child img {
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    margin-left: 10px;
+    margin-left: 10px;
+}
+
+.talisman-single-box {
+    margin-top: 150px;
+}
+
+.talisman-single-box .title__name {
+    width: 60%;
+}
+
+.talisman-single-box .title__name h3 {
+    font-size: 42px;
+    line-height: 44px;
+}
+
+.talisman-single-box .content-block__title {
+    border-bottom: 3px solid #161310;
+    margin-bottom: 95px;
+}
+
+.talisman-stage1-vouting__voute-box:not(:last-child) {
+    margin-bottom: 90px;
+}
+
+.talisman-stage1-vouting__voute-box_title {
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 60px;
+    margin-bottom: 25px;
+}
+
+.vouting-form__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    border-bottom: 2px solid #F3F1EE;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.vouting-form__row:last-child {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    /* border-bottom: 2px solid #F3F1EE; */
+}
+
+.vouting-form__row .checkbox-box__item {
+    margin-bottom: 0;
+}
+
+.vouting-form__row .checkbox-box__item {
+    min-width: 145px;
+}
+
+.vouting-form__row .checkbox-box__item:not(:last-child) {
+    margin-right: 90px;
+}
+
+.vouting-form__row>span {
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 45px;
+    display: block;
+}
+
+.vouting-form__row .checkbox__text:after {
+    -webkit-filter: brightness(0);
+    filter: brightness(0);
+}
+
+.vouting-form__col .checkbox-box__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.vouting-form__col .checkbox__text:before {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.vouting-form__col .checkbox-box__item input {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.vouting-form__col .checkbox__text:after {
+    -webkit-filter: brightness(0);
+    filter: brightness(0);
+}
+
+.talisman-stage1-vouting__voute-box_form.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    align-items: flex-start;
+}
+
+.vouting-form__col:not(:last-child) {
+    margin-right: 120px;
+}
+
+.talisman-stage1-vouting__voute-box .content-block__more {
+    margin-top: 80px;
+    background-color: #F37320;
+}
+
+.talisman-stage1-vouting__voute-box .content-block-more span {
+    color: white;
+}
+
+.talisman-next-stage {
+    padding-top: 50px;
+    margin-top: 75px;
+    border-top: 2px solid #F3F1EE;
+    margin-bottom: 120px;
+}
+
+.talisman-next-stage .talisman-content-item__left {
+    height: auto;
+
+}
+
+.talisman-next-stage .talisman-stages__content_item {
+    display: block;
+}
+
+.talisman-single-box .title__name>span {
+    font-size: 19px;
+    line-height: 142.3%;
+    display: block;
+    margin: 30px 0;
+}
+
+.talisman-single-box .talisman-stage-finished .content-block__title {
+    margin-bottom: 0;
+}
+
+.talisman-single-box .talisman-stage-finished .vouting-form__row:first-child {
+    border-top: unset;
+}
+
+.talisman-single-box .talisman-stage-finished .vouting-form__row{
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+
+.talisman-single-box .talisman-stage-finished .vouting-form__row:last-child {
+    border-bottom: unset;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    align-items: flex-start;
+}
+
+.vouting-form__row_answer {
+    min-width: 230px;
+}
+
+.vouting-form__row_answer:not(:last-child) {
+    margin-right: 90px;
+}
+
+.vouting-form__row_answer.chosen {
+    font-weight: bold;
+}
+
+.vouting-form__row_answer>div:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.vouting-form__row_answer>div.chosen {
+    font-weight: bold;
+}
+
+.talisman-stage2-prev {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+}
+
+.talisman-stage2-prev>div {
+
+    width: 100%;
+}
+
+.talisman-stage2-prev>img {
+
+    width: 43%;
+
+}
+
+.talisman-stage2-prev>div>p {
+    font-size: 20px;
+    line-height: 142.34%;
+    color: rgba(22, 19, 16, 0.9);
+
+}
+.btn.btn_or.poll_vars_item_more_button {
+    width: 60%;
+    padding: 16px 40px;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 60px;
+}
+
+.poll_vars_item_more.pp_ {
+    margin-bottom: 30px;
+}
+
+.poll_wrap.show_results .poll_vars_item_title {
+    padding-bottom: 20px;
+}
+.poll_wrap_button {
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.js-tal-vote-button.disabled{
+    pointer-events:none;
+    opacity: .3;
+
+}
+.poll_vars_item.poll_vars_item_talisman .poll_vars_item_check {
+    display: none;
+}
+
+.poll_vars_item.poll_vars_item_talisman.chosed .poll_vars_item_check {
+    display: block;
+}
+.talisman-stage2-prev>div>p:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.talisman-stage2-prev .content-block__more {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    pointer-events: none;
+}
+
+.talisman-stage2-prev .content-block-more span {
+    color: #CFC5B5;
+
+}
+
+.talisman-stage2-prev.active .content-block-more {
+    background-color: #F37320;
+    pointer-events: all;
+}
+
+.talisman-stage2-prev.active .content-block-more span {
+    color: white;
+}
+
+.talisman-stage2-prev.active>div>p:last-child {
+
+}
+
+.talisman-single-box.stage-2 .content-block__title {
+    margin-bottom: 47px;
+}
+button.content-block-more.js-tal-to-form.disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.talisman-stages__tabs_item {
+    width: -webkit-calc(100% / 3);
+    width: -moz-calc(100% / 3);
+    width: calc(100% / 3);
+}
+.talisman-stage-waiting_sep_bottom{
+    margin-bottom: 100px;
+}
+.talisman {
+    margin-bottom: 40px;
+    border-bottom: 2px solid #f2eee6;
+    padding-bottom: 40px;
+}
+.talisman-stage2-form .information {
+    width: 52%;
+    margin-right: 78px;
+    float: left;
+}
+
+.talisman-stage2-form .input_box input {
+    background: #f7f7f7;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+
+.talisman-stage2-form .small_phone {
+    width: 56%;
+}
+
+.talisman-stage2-form .content-block__more {
+    background-color: #F37320;
+    margin-top: 70px;
+}
+
+.talisman-stage2-form .content-block-more span {
+    color: white;
+}
+
+.talisman-stage2-thx>div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 80px;
+}
+
+.talisman-stage2-thx>div:first-child>img {
+    margin-bottom: 45px;
+    display: block;
+}
+
+.talisman-stage2-thx>div:first-child>span {
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.talisman-stage2-thx .content-block__more {
+    width: 38%;
+    background: #F37320;
+    -webkit-border-radius: 66px;
+    -moz-border-radius: 66px;
+    border-radius: 66px;
+    height: 60px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.talisman-stage2-thx .content-block__more span {
+    font-size: 20px;
+    line-height: 26px;
+    color: white;
+}
+
+.checkbox-box__item.inactive {
+    opacity: .5;
+    pointer-events: none;
+}
+
+form.js-step1-talisman-radio.error .vouting-form__row {
+    border-color: #ff8d8d;
+}
+form.js-step1-talisman-checkboxes.error {
+    border-color: #ff8d8d;
+}
+form{
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+.tal_juri_list_item {
+    position: relative;
+    width: 50%;
+    margin-bottom: 60px;
+    padding-right: 45px;
+    padding-bottom: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.tal_juri_list_item::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    width: 100%;
+    height: 2px;
+    background-color: #f3f3f3;
+}
+.tal_juri_list_item:nth-child(even){
+    padding-right: 0;
+    padding-left: 45px;
+    border-left: 2px solid #F3F3F3;
+}
+.tal_juri_list_item:nth-child(even)::before{
+    left: -2px;
+    width: -webkit-calc(100% + 2px);
+    width: -moz-calc(100% + 2px);
+    width: calc(100% + 2px);
+}
+.tal_juri_list_item:nth-child(odd):last-child{
+    margin-bottom: 0;
+}
+.tal_juri_list_item:nth-child(odd):last-child::before{
+    display: none;
+}
+
+.tal_juri_list_item:after {content: ' ';display: block;clear: both;}
+.tal_juri_list_item_img {
+    float: left;
+    width: 140px;
+    height: 140px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 45px;
+}
+.tal_juri_list_item_img img {
+    width: 140px;
+    height: 140px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+a.tal_juri_list_item_img:hover{
+    opacity: .5;
+}
+
+.tal_juri_list_item_text_name {
+    font-size: 28px;
+    margin-bottom: 17px;
+    font-weight: 600;
+}
+.tal_juri_list_item_text_func {
+    font-size: 20px;
+}
+.tal_juri_list_item_text {
+    font-family: 'Graphik LCG';
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.tal_juri_list:after {content: ' ';display: block;clear: both;}
+.tal_juri_list {
+    margin-bottom: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.tal_juri_list:last-child{
+    margin-bottom: 0;
+}
+
+.tal_juri_list_item:after {content: ' ';display: block;clear: both;}
+
+.tal_juri_list_item_img {
+    float: left;
+    width: 140px;
+    height: 140px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.tal_juri_list_item_img img {
+    width: 140px;
+    height: 140px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.tal_juri_list_item_text_name {
+    font-size: 28px;
+    margin-bottom: 17px;
+}
+
+.tal_juri_list_item_text_func {
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.tal_juri_list_item_text {
+    font-family: 'Graphik LCG';
+    padding-left: 40px;
+    float: left;
+    width: -webkit-calc(100% - 140px);
+    width: -moz-calc(100% - 140px);
+    width: calc(100% - 140px);
+    padding-top: 20px;
+    padding-right: 70px;
+}
+
+.tal_juri_list:after {content: ' ';display: block;clear: both;}
+
+.tal_juri_list {
+    margin-bottom: 100px;
+}
+
+.tal_drafts_list:after {content: ' ';display: block;clear: both;}
+
+.tal_drafts_item {
+    width: -webkit-calc(100% / 3 - 20px);
+    width: -moz-calc(100% / 3 - 20px);
+    width: calc(100% / 3 - 20px);
+    float: left;
+    border: 2px solid #F3F1EE;
+    position: relative;
+    padding-bottom: 25px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.tal_drafts_item_author .person__name span {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.tal_drafts_item_author .person__img {
+    width: 24px;
+    height: 24px;
+}
+
+.tal_drafts_item_image {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tal_drafts_item_title {
+    font-size: 22px;
+    font-family: 'Graphik LCG';
+    padding: 0 40px;
+    min-height: 60px;
+    margin-bottom: 10px;
+}
+
+.tal_drafts_item_votes {
+    font-family: 'Graphik LCG';
+    font-size: 22px;
+    color: #f37320;
+}
+
+.tal_drafts_item_author {
+    padding: 0 40px;
+    width: 80%;
+}
+
+.tal_drafts_item_votes {
+    /* padding: 0 40px; */
+}
+
+.tal_drafts_item_vote_box .card-vote-likes__button_like {
+    opacity: 1;
+    visibility: visible;
+    width: 64px;
+    height: 64px;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.tal_drafts_item_vote_box .card-vote-likes__button:before {
+    background: rgba(243, 115, 32, 0.38);
+}
+
+.tal_drafts_item_vote_box {
+    position: absolute;
+    bottom: 17px;
+    right: 18px;
+}
+
+.tal_drafts_item_votes {
+    width: 54%;
+    border-top: 2px solid #f3f1ee;
+    /* margin: 0 auto; */
+    margin-left: 40px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.tal_drafts_item_image:hover .project-gallery-item__info.project-gallery-item__info_hidden {
+    opacity: 1;
+}
+
+.tal_drafts_item_image .project-gallery-item__info.project-gallery-item__info_hidden {
+    background: rgba(255, 255, 255, 0.5);
+    color: #161616;
+    padding: 33%;
+}
+
+.tal_drafts_item_image .project-gallery-item__info.project-gallery-item__info_hidden span {
+    color: #161616;
+}
+
+.tal_drafts_item_image {
+    text-align: center;
+    padding: 30px;
+}
+
+.tal_drafts_item_image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tal_drafts_item_image_gall {
+    display: none;
+}
+
+.tal_drafts_item_vote_box .card-vote-likes__button_like span {
+    background-image: url(../images/card-button-like_or.svg);
+
+}
+.tal_drafts_item {}
+
+.tal_drafts_item:nth-child(3n+3) {
+    margin-right: 0px;
+}
+
+
+.juri_label{
+    background: url(../images/juri_label.svg) no-repeat center;
+    width: 129px;
+    height: 114px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    position: absolute;
+    z-index: 7;
+    top: -8px;
+    left: -8px;
+}
+.tal_drafts_item.tal_drafts_item_juri .tal_drafts_item_author {
+    width: 100%;
+}
+
+.tal_drafts_item.tal_drafts_item_juri .tal_drafts_item_votes {
+    width: -webkit-calc(100% - 80px);
+    width: -moz-calc(100% - 80px);
+    width: calc(100% - 80px);
+    /* margin-left: 0; */
+}
+.talisman-stage-waiting.talisman-stage-waiting_box {
+    margin-bottom: 100px;
+}
+.tal_upload_draft_title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tal_upload_draft_title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.info__item__gallery.info__item__gallery_talisman .gallery__upload>.upload__area-small {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.info__item__gallery.info__item__gallery_talisman .upload__require-box-small {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+form#send_talisman_draft {}
+
+.upload__area.upload__area-small.multiple.uploaded {}
+
+.info__item__gallery.info__item__gallery_talisman .upload__area.upload__area-small.multiple.uploaded {
+    width: 156px;
+    height: 156px;
+    margin-bottom: 20px;
+}
+
+.upload_form_tal_innier:after {content: ' ';display: block;clear: both;}
+
+.imgaes-uploading {
+    float: left;
+    width: -webkit-calc(48% - 78px);
+    width: -moz-calc(48% - 78px);
+    width: calc(48% - 78px);
+}
+
+.info__item__gallery.info__item__gallery_talisman .upload__area.upload__area-small.multiple.uploaded:nth-child(3) {
+    margin-right: 0px;
+}
+.tal_drafts_item_vote_box .card-vote-likes__button_like.xlike__link_active span {
+    background-image: url(../images/card-button-like_white.svg);
+}
+
+.tal_drafts_item_vote_box .card-vote-likes__button_like.xlike__link_active:before {
+    background: rgb(243, 115, 32);
+}
+
+.talisman-stage-active_form{
+    margin-bottom: 100px;
+}
+
+.talisman-stage-waiting .select.select_filled {
+    padding-right: 0px;
+    right: 0;
+    position: absolute;
+}
+
+.poll_vars_item.poll_vars_item_talisman {
+    width: auto;
+    float: none;
+    border: 2px solid #F3F1EE;
+    position: relative;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 42px;
+}
+.poll_vars {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.poll_vars_item_result_tal_t {
+    display: none;
+}
+
+.poll_vars_item_result_tal_total {
+    display: none;
+}
+
+.poll_vars_item.poll_vars_item_talisman:nth-child(3) {
+    margin-right: 0px;
+}
+
+.poll_vars_item.poll_vars_item_talisman .poll_vars_item_title {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Graphik LCG';
+    line-height: 1.3;
+}
+
+.poll_vars_item.poll_vars_item_talisman .poll_vars_item_check {
+    bottom: initial;
+    top: 20px;
+}
+
+.poll_vars_item_talisman_box {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.poll_vars_item.poll_vars_item_talisman .poll_vars_item_result {
+    /* position: relative; */
+}
+
+.poll_vars_item_result_tal_t {
+    font-size: 19px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.poll_vars_item_result_tal_total {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.poll_vars_item_result_val {
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 22px;
+    left: initial;
+    top: initial;
+    bottom: 20px;
+}
+
+.poll_title.poll_title_talisman {
+    font-size: 42px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid;
+}
+
+.talisman-stages__content_item.active .talisman-content-item__left_name>span:last-child {
+    color: #161616;
+}
+
+.talisman-stages__content_item.active .talisman-content-item__left_name>span:first-child {
+    color: #161616;
+}
+.poll_vars_item_more.pp_ {
+    text-align: center;
+    margin-bottom: 38px;
+    font-size: 17px;
+    color: #ff4d1c;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.poll_vars_item_more.pp_:hover {
+    opacity: .7;
+}
+.tal_test_result_share_title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Graphik LCG';
+}
+
+.tal_test_result_share_list {
+    margin-bottom: 40px;
+}
+
+.tal_test_result_share_item {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    margin: 0 3px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.tal_test_result_share_item:hover {
+    opacity: .7;
+}
+
+.tal_test_result_share_item.tal_test_result_share_vk {
+    background: #4a76a8;
+}
+
+.tal_test_result_share_item.tal_test_result_share_fb {
+    background: #0084FF;
+}
+
+.tal_test_result_share_item.tal_test_result_share_tw {
+    background: rgb(29, 161, 242);
+}
+
+.tal_test_result_share_item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    z-index: 12;
+}
+
+.tal_test_result_share_item.tal_test_result_share_vk:before {
+    background: url(../images/socs-ico-1.svg) no-repeat center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+a.tal_test_result_share_item.tal_test_result_share_fb:before {
+    background: url(../images/socs-ico-2.svg) no-repeat center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+a.tal_test_result_share_item.tal_test_result_share_tw:before {
+    background: url(../images/socs-ico-3.svg) no-repeat center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+.tal_test_result_share_item.tal_test_result_share_ok:before {
+    /* background: #F7931E; */
+    background: url(../images/socs-ico-3.svg) no-repeat center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+.tal_test_result_share_item.tal_test_result_share_ok {
+    background: #F7931E;
+}
+.talisman-stage2-prev .btn:before {
+    /* background: #ccc; */
+    background: #FF4D1C;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    border-radius: 90px;
+}
+
+.talisman-stage2-prev .btn {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Graphik LCG', sans-serif;
+}
+
+.talisman-stage2-prev p a {
+    color: #ff4d1c;
+    border-bottom: 1px solid;
+}
+
+.talisman-page .general-section__item_title h1 {
+    font-size: 62px;
+}
+.pp__content.pp__content_simple {}
+
+.pp.pp_simple.pp_simple_rules.pp_simple_test .pp__content {
+    width: 1000px;
+    /* text-align: center; */
+}
+
+.pp.pp_simple.pp_simple_rules.pp_simple_test .pp-content_simple {
+    background: #fff;
+}
+
+.pp.pp_simple.pp_simple_rules.pp_simple_test h2 {
+    font-size: 44px;
+    padding-bottom: 0px;
+    line-height: 1;
+}
+
+
+.pp.pp_simple.pp_simple_rules.pp_simple_test .content-block__title {
+    margin-bottom: 40px;
+}
+.pp.pp_simple.pp_simple_rules.pp_simple_test .pp_c_text {
+    margin-bottom: 20px;
+    font-size: 100px;
+}
+.pp.pp_simple.pp_simple_rules.pp_simple_test .pp_c_text p {
+    /* margin-bottom: 20px; */
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+
+
+
+
+
+
+
+
+.pp_c_list_wrap .tal_test_questions_item_title {
+    font-size: 32px;
+}
+
+.pp_c_list_wrap .tal_title_box {
+    /* position: absolute; */
+    /* top: 0; */
+}
+
+.pp_c_list_wrap .talisman-single-box {
+    margin: 0;
+}
+
+.pp_c_list_wrap .tal_test_steps {
+    margin: 0;
+    padding: 0;
+}
+
+.pp_c_list_wrap .tal_title_box {
+    margin-bottom: 60px;
+}
+
+.pp_c_list_wrap .tal_test_questions_item_title {
+    margin-bottom: 20px;
+}
+
+.pp_c_list_wrap .tal_test_questions_item_vars {
+    margin-left: -31px;
+}
+
+.pp_c_list_wrap .tal_test_varitem {
+    background: transparent;
+}
+
+.pp_c_list_wrap .tal_test_questions {
+    height: initial;
+}
+
+.pp_c_list_wrap .tal_test_questions_item {
+    position: relative;
+}
+
+.pp_c_list_wrap .tal_test_steps_item.passed {
+    /* display: none; */
+}
+
+.pp_c_list_wrap .tal_test_questions_item {
+    display: none;
+}
+
+.pp_c_list_wrap .tal_test_questions_item.active {
+    display: block;
+    height: initial;
+}
+
+.pp_c_list_wrap .tal_test_results {
+    /* display: none; */
+    position: relative;
+    top: initial;
+}
+
+.btn.btn_or {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Graphik LCG', sans-serif;
+}
+
+.talisman-page .general-section__item_text {
+    width: 49%;
+}
+.tal_drafts_item.tal_drafts_item_juri .tal_drafts_item_votes {
+    display: none;
+}
+.tal_drafts_item_votes {
+    display: none;
+}
+
+.tal_drafts_item_vote_box {
+    display: none;
+}
+
+.tal_test_results_item_text {
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.tal_test_results_item_image img {
+    width: 45%;
+}
+
+
+
+
+.general-section__item_text a {
+    color: #BB2454;
+    border-bottom: 1px solid;
+}
+
+.general-section__item_text a:hover {
+    opacity: .7;
+}
+.campaign-item__title {
+    min-height: 70px;
+    max-height: 70px;
+    overflow: hidden;
+}
+
+.campaign-item__body img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.campaign-item__body {
+    height: 100px;
+}
+.campaign-item__title {
+    min-height: 70px;
+    max-height: 70px;
+    overflow: hidden;
+}
+
+.campaign-item__body img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.campaign-item__body {
+    height: 100px;
+}
+
+.funds-item__counter {
+    position: absolute;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 31px;
+}
+
+.funds-item {
+    padding-bottom: 100px;
+}
+
+.funds-item__img {
+    margin-bottom: 20px;
+    max-width: 150px;
+    max-height: 100px;
+    height: 100px;
+    width: 150px;
+    object-fit: contain;
+}
+/**/
+
+/*.general-section__item_title img {
+    height: 400px;
+    margin-bottom: 80px;
+    margin-top: -60px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}*/
+
+.section__inner.general-section.general-section_talisman {
+    background: url('../images/talisman-top-bg.jpg') no-repeat center !important;
+    background-size: cover !important;
+}
+
+.section__inner.general-section.general-section_talisman>.grid__content {
+    min-height: 680px;
+}
+
+.section__inner.general-section.general-section_talisman h1 {
+    width: 122%;
+    margin-bottom: 52px;
+}
+
+.talisman-stage-waiting .poll_vars_item.chosed .poll_vars_item_check {
+    background: url(../images/polls_var_check-purple.svg) no-repeat center #433DE9;
+}
+
+.talisman-stage-waiting .poll_vars_item_more.pp_ {
+    color: #433DE9;
+}
+
+.talisman-stage-waiting .poll_vars_item_result_val {
+    color: #433DE9;
+}
+
+.poll_vars_item_result_bar {}
+
+.talisman-stage-waiting .poll_vars_item_result_bar {
+    background: rgba(67, 61, 233, 0.35);
+}
+
+.talisman-stage-waiting .poll_vars_item_result_bar_inner {
+    background: #433DE9;
+}
+
+
+.talisman-comm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 66px;
+    padding-top: 66px;
+    border-top: 2px solid #F3F3F3;
+}
+.talisman-comm-vis {
+    background: #433DE9;
+    margin-right: 54px;
+}
+.talisman-comm-vis__img {
+    height: 352px;
+    margin-top: 30px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.talisman-comm-vis__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+.talisman-comm-vis__text {
+    color: #FFFFFF;
+    padding: 0 22px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 42px;
+}
+
+.talisman-comm-info {
+    position: relative;
+    padding: 46px 62px;
+    border: 2px solid #F3F3F3;
+    margin-left: 16px;
+    z-index: 0;
+}
+.talisman-comm-info:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: -38px;
+    width: 52px;
+    height: 52px;
+    background: url(../images/talisman-comm-info-after.svg) no-repeat center;
+    background-size: contain;
+    z-index: 12;
+}
+.talisman-comm-info:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 20%;
+    right: 8%;
+    width: 130px;
+    height: 85px;
+    background: url(../images/talisman-comm-info-before.svg) no-repeat center;
+    background-size: contain;
+    z-index: 0;
+}
+.talisman-comm-info__pers {
+    position: relative;
+    margin-bottom: 32px;
+    z-index: 1;
+}
+.talisman-comm-pers {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.talisman-comm-pers__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.talisman-comm-pers__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.talisman-comm-pers__info {
+    position: relative;
+    padding-left: 28px;
+    z-index: 1;
+}
+.talisman-comm-pers__info-name {
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(22, 19, 16, 0.9);
+    margin-bottom: 8px;
+}
+.talisman-comm-pers__info-city {
+    font-size: 18px;
+    color: #C9C5C5;
+}
+.talisman-comm-info__text {
+    position: relative;
+    z-index: 2;
+    font-size: 22px;
+    line-height: 1.4;
+    color: rgba(22, 19, 16, 0.9);
+    margin-bottom: 41px;
+}
+.talisman-comm-info__btn {
+    position: relative;
+    z-index: 1;
+}
+.talisman-comm-info__btn .addnew {
+    margin-bottom: 0;
+}
+
+.talisman-comm-info__btn .addnew_img.green::before {
+    background-color: #433DE9 !important;
+}
+.talisman-comm-info__btn .addnew>p {
+    color: #433DE9 !important;
+}
+
+
+
+.pp__talisman-comm {
+    padding: 32px 32px;
+}
+.pp-talisman-comm-pers {
+    position: relative;
+    text-align: center;
+    margin-bottom: 42px;
+}
+.pp-talisman-comm-pers__img {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.pp-talisman-comm-pers:after, .pp-talisman-comm-pers:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 42px;
+    margin: auto;
+    width: calc(50% - 40px - 48px);
+    height: 2px;
+    background: #F3F3F3;
+    z-index: 0;
+}
+.pp-talisman-comm-pers:after {
+    left: 0;
+}
+.pp-talisman-comm-pers:before {
+    right: 0;
+}
+.pp-talisman-comm-pers__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.pp-talisman-comm-pers__info {
+
+}
+.pp-talisman-comm-pers__info-name {
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(22, 19, 16, 0.9);
+    margin-bottom: 8px;
+}
+.pp-talisman-comm-pers__info-city {
+    font-size: 14px;
+    color: #C9C5C5;
+}
+.pp-talisman-comm-text {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.4;
+    color: rgba(22, 19, 16, 0.9);
+}
+.pp.pp_talisman-comm .pp__content.pp__content_simple {
+    top: 100px;
+}
+
+.addnew.scroll-down {
+    margin-top: 60px;
+}
+.scroll-down.addnew>p {
+    color: #FFF !important;
+}
+.scroll-down.addnew .addnew_img::before {
+    background-color: #FFF !important;
+}
+.scroll-down.addnew .addnew_img img {
+    width: 16px;
+    height: 9px;
+    margin-left: 0;
+    background-color: #FFF !important;
+}
+
+
+
+/* yards */
+
+
+.district-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 164px;
+    grid-gap: 16px;
+}
+.district {
+    padding: 52px 10px 42px;
+    border: 2px solid #F3F3F3;
+    display: flex;
+    flex-direction: column;
+}
+
+.district__title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.district__yard {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1671B8;
+    margin-bottom: 38px;
+}
+
+
+.district__btn {
+    text-align: center;
+    margin-top: auto;
+}
+.btn.district-btn {padding: 14px 42px;}
+.btn.district-btn span {font-size: 14px;}
+
+.btn.district-btn:before {
+    background: #1671B8;
+}
+
+.poll_vars_item_more.poll_vars_item_vote {
+    color: #1671B8;
+}
+.poll_vars:not(.show_results) .poll_vars_item_more.poll_vars_item_vote {
+    margin-bottom: 42px;
+}
+.btn.btn-vote-green:before {
+    background: #1671B8;
+}
+.btn.btn-vote-green span {
+    font-size: 18px;
+}
+.btn.btn-vote-green {
+    margin: 0 auto;
+}
+.btn-vote-green-wrap {
+    text-align: center;
+    /* margin-bottom: 42px; */
+}
+.poll_vars_item.poll_vars_item_talisman.poll_vars_item_yard .poll_vars_item_check.poll_vars_item_check-vote {
+    display: block;
+    top: auto;
+    bottom: 20px;
+}
+.poll_vars_item.poll_vars_item_talisman.poll_vars_item_yard.chosed .poll_vars_item_check.poll_vars_item_check-vote {
+    background: url(../images/polls_var_check-green.svg) no-repeat center #1671B8;
+    -webkit-background-size: 113% 113%;
+    -moz-background-size: 113%;
+    -o-background-size: 113%;
+    background-size: 113%;
+    text-indent: -9999px;
+}
+.btn.btn-yards-more {
+    width: 100%;
+    padding: 28px 42px;
+}
+
+.btn.btn-yards-more:before {
+    border: 2px solid #1671B8;
+    background: transparent;
+}
+
+.btn.btn-yards-more span {
+    color: #1671B8;
+    font-size: 22px;
+    font-weight: 600;
+}
+.vote-ranges-wraper {
+
+}
+.vote-range-wrap {
+
+}
+.vote-range-yardswrap {
+    margin-top: 72px;
+}
+.vote-range-wrap__yard {
+
+}
+.yard-top {
+    text-align: center;
+}
+.yard-top__back {
+    margin-bottom: 28px;
+}
+.yard-top__back span {
+    color: #C4C4C4;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.yard-top__back span:hover {
+    color: #1671B8;
+}
+.yard-top__title {
+    position: relative;
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+.yard-top__title span {
+    position: relative;
+    display: inline-block;
+    background: #FFF;
+    padding: 0 68px;
+    z-index: 2;
+    font-family: 'Platform';
+}
+.yard-top__title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(50% + 1px);
+    width: 100%;
+    height: 2px;
+    background: #F3F3F3;
+    z-index: 0;
+}
+.yard-top__nums {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.vote-num-imgs {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.poll_vars_item_image_wrap:hover .vote-num-imgs {
+    opacity: 1;
+}
+.vote-num-imgs:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: linear-gradient(180deg, rgba(16, 26, 53, 0) 0%, #101A35 100%);
+    opacity: 0.7;
+    z-index: 0;
+}
+.vote-num-imgs__ico {
+    position: relative;
+    width: 42px;
+    height: 30px;
+    background: url(../images/vote-num-img.svg) no-repeat center;
+    background-size: contain;
+    margin-bottom: 12px;
+    z-index: 3;
+}
+.vote-num-imgs__txt {
+    position: relative;
+    text-align: center;
+    width: 80%;
+    font-size: 18px;
+    color: #FFF;
+    z-index: 5;
+}
+
+
+.content-block__yard {
+    position: relative;
+    margin-bottom: 28px;
+}
+.content-block__yard span {
+    display: inline-block;
+    position: relative;
+    color: #1671B8;
+    font-weight: 600;
+    font-size: 16px;
+    background: #FFF;
+    padding-right: 42px;
+    z-index: 3;
+}
+.content-block__yard:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50%);
+    width: 100%;
+    height: 2px;
+    background: #F3F3F3;
+    z-index: 1;
+}
+.content-block__adr {
+    font-size: 34px;
+}
+.swiper-container.swiper-container_yard {
+    height: 400px;
+    margin-bottom: 106px;
+}
+.tal_pp_gallery {
+    position: relative;
+}
+.swiper-navigation.swiper-navigation_yard {
+    bottom: -58px;
+}
+.swiper-navigation.swiper-navigation_yard .swiper-button {
+    width: 34px;
+    height: 34px;
+}
+.swiper-navigation.swiper-navigation_yard .swiper-button:after {
+    width: 12px;
+    height: 12px;
+}
+.swiper-navigation.swiper-navigation_yard .swiper-button-prev {
+    margin-right: 8px;
+}
+.swiper-pagination.swiper-pagination_yard {
+    bottom: -52px;
+    right: 0;
+    width: auto;
+    left: auto;
+    font-size: 28px;
+}
+.content-block__title.content-block__title_bordernone {
+    border-bottom: 0;
+}
+.swiper-container.swiper-container_yard .swiper-wrapper {
+    height: 100%;
+}
+.swiper-container.swiper-container_yard img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.poll_vars_item.poll_vars_item_talisman.poll_vars_item_yard .poll_vars_item_result_val {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: #1671B8;
+}
+.poll_vars_item.poll_vars_item_talisman.poll_vars_item_yard .poll_vars_item_result_bar {
+    background: #ECF0EF;
+}
+.poll_vars_item.poll_vars_item_talisman.poll_vars_item_yard .poll_vars_item_result_bar_inner {
+    background: #1671B8;
+}
+
+.poll_vars.show_results .btn.btn-vote-green {
+    display: none;
+}
+
+.pp-content__text iframe {
+    height: 512px;
+    margin-bottom: 48px;
+}
+
+.yards-info-section {
+    background-color: #FAFAFA;
+    padding: 90px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* yards - end */
+
+/* yards map */
+
+.yardfin {
+    margin-top: 0px;
+}
+
+.yardfin-title {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding:  0 0 24px;
+    border-bottom: 3px solid #161310;
+    margin-bottom: 52px;
+}
+.yardfin-title__txt {
+    font-size: 50px;
+    font-family: 'Platform';
+}
+.yardfin-title__switches {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.yardfin-title-switch {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 42px;
+    opacity: 1;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+.yardfin-title-switch__ico {
+    position: relative;
+    width: 30px;
+    height: 22px;
+}
+.yardfin-title-switch__ico img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+.yardfin-title-switch__ico img:nth-child(1) {
+    opacity: 1;
+}
+.yardfin-title-switch.active .yardfin-title-switch__ico img:nth-child(1) {
+    opacity: 0;
+}
+.yardfin-title-switch__ico img:nth-child(2) {
+    opacity: 0;
+}
+.yardfin-title-switch.active .yardfin-title-switch__ico img:nth-child(2) {
+    opacity: 1;
+}
+
+.yardfin-card .talisman-comm-info__btn .addnew>p {
+    color: #1671B8 !important;
+}
+
+.yardfin-title-switch__txt {
+    width: calc(100% - 30px);
+    padding-left: 22px;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.yardfin-title-switch.active .yardfin-title-switch__txt {
+    color: #1671B8;
+}
+.yardfin-card .talisman-comm-info__text p {
+    height: auto;
+    overflow: hidden;
+}
+.yardfin-content {
+
+}
+.yardfin-content__item {
+
+}
+.yardfin-content-cards {
+
+}
+.yardfin-card {
+    padding-top: 48px;
+    margin-top: 48px;
+    border-top: 2px solid #F3F3F3;
+}
+.yardfin-card:nth-child(1) {
+    padding-top: 0;
+    border-top: 0;
+}
+.yardfin-card-title {
+    font-size: 34px;
+    margin-bottom: 28px;
+}
+.yardfin-card-content {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+.yardfin-card-img {
+    position: relative;
+    width: 548px;
+    height: 540px;
+    cursor: pointer;
+}
+.yardfin-card-content .talisman-comm-info {
+    width: calc(100% - 548px);
+    margin-left: 62px;
+}
+.yardfin-card-img__pic {
+    height: 100%;
+    overflow: hidden;
+}
+.yardfin-card-img__pic img {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 3.3s;
+    -o-transition: 3.3s;
+    -moz-transition: 3.3s;
+    z-index: 1;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.yardfin-card-img:hover .yardfin-card-img__pic img {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+
+.yardfin-card-img__adr {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 28px;
+    left: 28px;
+    z-index: 2;
+}
+.yardfin-card-img__adr img {
+    width: 32px;
+    height: 26px;
+}
+.yardfin-card-img__adr span {
+    display: inline-block;
+    width: calc(100% - 32px);
+    padding-left: 12px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+.yardfin-card-img__pic:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(16, 26, 53, 0) 0%, #101A35 100%);
+}
+.yardfin-title-switch:hover {
+    opacity: 0.6;
+}
+.yardfin-card .talisman-comm-info__btn .addnew.addnew_greener > p {
+    color: #1671B8 !important;
+}
+.yardfin-card .talisman-comm-info__btn .addnew_img.green::before {
+    background-color: #1671B8 !important;
+}
+
+.btn.district-btn.district-btn_transp {
+    opacity: 0.5;
+}
+.poll_vars.show_results .poll_vars_item_result {
+    display: block;
+}
+.poll_vars_item.poll_vars_item_yard .poll_wrap_button {
+    opacity: 1;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-bottom: 42px;
+}
+.poll_vars_item.poll_vars_item_yard .poll_wrap_button .content-block-more span {
+    font-size: 18px;
+}
+.poll_vars_item.poll_vars_item_yard .content-block__more {
+    height: auto;
+    width: auto;
+    padding: 12px 32px;
+}
+.poll_vars_item.poll_vars_item_yard .content-block__more:hover {
+    opacity: 0.6;
+}
+
+.upload__area label.error {
+    text-align: center;
+    margin-top: 7px;
+}
+
+.yardfin-content-map {
+    height: 500px;
+}
+.yardfin-content-map iframe {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+/* yards blue start */
+
+
+
+
+.yards-info-section__content {width: 46%;}
+
+.yards-info-section__title {
+    font-size: 28px;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+
+.color-blue {
+    color: #1671B8;
+}
+
+.yards-info-section__text {
+    max-width: 100%;
+}
+
+.yards-info-section__count {
+    display: block;
+    font-size: 100px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.yards-info-section__counters {
+    font-size: 34px;
+    line-height: 1;
+    display: flex;
+    font-family: 'Platform';
+}
+
+.yards-info-section__counters > span {
+    margin-right: 70px;
+}
+
+.yards-info-section__counters > span:last-child {
+    margin-right: 0;
+}
+
+
+.yards-info-section__img {
+    background-image: url(../images/yards-info-section__bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 46.3917526%;
+    height: 303px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (max-width:1679px) {
+
+    .yards-page .section__inner.general-section.header-background-img .general-section__item_text {
+        width: 55%;
+        flex: initial;
+        margin-left: auto;
+    }
+
+    .yards-page .general-section__item_title img {
+        width: 266px;
+        height: 46px;
+    }
+
+}
+
+@media screen and (max-width:1430px) {
+
+    .yards-info-section__img {
+        width: 62.109375%;
+        height: 268px;
+        right: -30px;
+    }
+}
+
+@media screen and (max-width:1279px) {
+
+
+    .yards-page .general-section__item_title img {
+        width: 196px;
+        height: 34px;
+    }
+
+    .yards-info-section {
+        padding: 50px 0 60px;
+    }
+
+    .yards-info-section__img {
+       width: 66.015625%;
+       height: 228.19px;
+       right: -130px;
+    }
+
+    .yards-info-section__content {
+        width: 50%;
+    }
+
+    .yards-info-section__title {
+        font-size: 24px;
+    }
+
+    .yards-info-section__counters {
+        font-size: 24px;
+    }
+
+    .yards-info-section__count {
+        font-size: 66px;
+    }
+
+    .yards-info-section__counters > span {margin-right: 50px;}
+
+    p.yards-info-section__text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+
+.yards-page .section__inner.general-section.header-background-img .general-section__item_text {
+    width: 49%;
+}
+
+.yards-info-section {
+    padding: 45px 0 0;
+    margin-bottom: 80px;
+}
+
+.yards-info-section__content {
+    width: 63%;
+}
+
+.yards-info-section__title {
+    margin-bottom: 25px;
+}
+
+
+
+.yards-info-section__img {
+    position: relative;
+    width: 88.0208333%;
+    right: 0;
+    left: 0;
+    margin: 45px auto 0;
+}
+
+
+.yardfin-title__txt {
+    font-size: 30px;
+}
+
+}
+
+@media screen and (max-width:767px) {
+    .yards-page .general-section__item_title img {
+        width: 162px;
+        height: 28px;
+    }
+
+    .yards-page .section__inner.general-section.header-background-img .general-section__item_text {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .yards-info-section {padding: 40px 0 0;margin-bottom: 30px;}
+
+    .yards-info-section__content {
+        width: 100%;
+    }
+
+    .yards-info-section__title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    p.yards-info-section__text {
+        font-size: 14px;
+    }
+
+    .yards-info-section__img {
+        height: 61vw;
+        width: 100%;
+        background-position: center;
+        background-image: url(../images/yards-info-section__bg_mobile.svg);
+    }
+
+    .yardfin-title__txt {
+        font-size: 28px;
+    }
+}
+
+/* yards blue end */
+
+
+/*november*/
+
+.section__inner.general-section.general-section_talisman.general-section_november {
+    background: url(../images/back.jpg) no-repeat center !important;
+    background-size: cover !important;
+}
+.section__inner.general-section.general-section_talisman.general-section_november h1{
+	color: #E30613;
+	width: 90%;
+}
+.section__inner.general-section.general-section_talisman.general-section_november p{
+	color: #161310;
+
+}
+.section__inner.general-section.general-section_talisman.general-section_november .scroll-down.addnew>p{
+	color: #E30613 !important;
+
+}
+.section__inner.general-section.general-section_talisman.general-section_november .scroll-down.addnew .addnew_img::before{
+	background-color: #E30613 !important;
+
+}
+.section__inner.general-section.general-section_talisman.general-section_november .scroll-down.addnew .addnew_img img{
+	background-color: transparent !important;
+
+}
+
+.section__inner.general-section.general-section_talisman.general-section_november .general-section__item_title img {
+    /* width: 462px; */
+    /* position: absolute; */
+    height: 400px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.section__inner.general-section.general-section_talisman.general-section_november .general-section__item:first-child:only-child {
+    padding-bottom: 40px;
+}
+.november_pic {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.november_pic:after {content: ' ';display: block;clear: both;}
+
+.november_pic_left {
+    float: left;
+    width: 50%;
+}
+
+.november_pic_left img {
+    max-width: 83%;
+}
+
+.november_pic_right_title {
+    font-size: 42px;
+    font-weight: bold;
+    font-family: 'Platform';
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.november_pic_right_text {
+    font-size: 22px;
+    line-height: 1.4;
+}
+.content-block__more.content-block__more_november {
+    background-color: #e30613;
+    border: none;
+}
+
+.checkbox__text a {
+    display: inline-block;
+    font-weight: 600;
+    border-bottom: 1px solid;
+    margin-left: 4px;
+}
+.talisman-single-box .november_form h3 {
+	font-size: 50px;
+}
+.november_pic_right_title.november_pic_right_title_i {
+    color: #e30613;
+    padding-top: 40px;
+}
+
+.november_pic_more .scroll-down.addnew>p {
+    color: #e30613 !important;
+}
+
+.november_pic_more .scroll-down.addnew .addnew_img::before {
+    background-color: #e30613 !important;
+}
+
+.november_pic_more .scroll-down.addnew .addnew_img img {
+    background: transparent !important;
+    width: 16px;
+    height: 13px;
+}
+
+.november_pic.november_pic_test {
+    margin-top: 50px;
+}
+.november_pic_right {
+    float: left;
+    width: 50%;
+}
+/*november_end*/
+
+@media screen and (max-width: 1680px) {
+    .section__inner.general-section.general-section_talisman>.grid__content {
+        min-height: 580px;
+    }
+}
+@media screen and (max-width: 1439px) {
+
+    .talisman-page .section__inner.general-section.general-section_showcase.general-section_showcase_h>.grid__content {
+        height: auto;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 160px;
+    }
+
+    .talisman-page .section__inner.general-section.general-section_showcase.general-section_showcase_h .general-section__item_text h1 {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 30px;
+    }
+
+    .talisman-page .showcase_buttons {
+        margin-top: 50px;
+    }
+
+    .talisman-page .general-section__item_title {
+        margin-top: 0;
+        width: 48.6%;
+        margin-right: 12px;
+    }
+
+    .talisman-page .section__inner.general-section.general-section_showcase.general-section_showcase_h .general-section__item_text {
+        width: 50%;
+    }
+
+    .talisman-page .general-section__item_title>img {
+        /*width: 100%;*/
+    }
+
+    .talisman-stages {
+        margin-top: 60px;
+    }
+
+    .talisman-stages__tabs_item {
+        font-size: 28px;
+        padding-right: 3.1vw;
+    }
+
+    .talisman-page button.addnew.button.pp_.go_down_in_history {
+        margin-top: 0;
+    }
+
+    .talisman-stages__tabs {
+        margin-bottom: 70px;
+    }
+
+    .talisman-content-item__left_name>span:first-child {
+        font-size: 64px;
+    }
+
+    .talisman-content-item__left_name>span:last-child {
+        font-size: 16px;
+    }
+
+    .talisman-content-item__right_descr>span:first-child {
+        margin-bottom: 30px;
+        font-size: 31px;
+        line-height: 31px;
+    }
+
+    .talisman-content-item__right_descr>span:last-child {
+        font-size: 18px;
+    }
+
+    .talisman-page .go_down_in_history {
+        margin-top: 80px;
+    }
+
+    .talisman-page .addnew_img img,
+    .talisman-single-page .addnew_img img {
+        width: 25%;
+        margin-left: 3px;
+    }
+
+    .talisman-content-item__right {
+        width: 50.5%;
+    }
+
+    .talisman-single-page .section__inner.general-section.general-section_showcase.general-section_showcase_h .general-section__item_text h1 {
+        font-size: 30px;
+        line-height: 40px;
+        padding-top: 0;
+    }
+
+    .talisman-single-box .title__name {
+        width: 100%;
+    }
+    .talisman-single-box .title__name h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .talisman-single-box  .title {
+        padding-bottom: 35px;
+    }
+    .talisman-single-box .content-block__title {
+        margin-bottom: 70px;
+    }
+    .talisman-stage1-vouting__voute-box_title {
+        font-size: 22px;
+        line-height: normal;
+    }
+
+    .vouting-form__row {
+
+        padding-top: 0;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .vouting-form__row > * {
+        padding-top: 30px;
+    }
+
+    .vouting-form__row .checkbox-box__item:last-child:nth-child(4){
+        margin-left: 66px;
+    }
+    .vouting-form__col .checkbox-box__item {
+        margin-right: 0;
+    }
+
+    .vouting-form__col:not(:last-child) {
+        margin-right: auto;
+    }
+
+    .talisman-content-item__right .button{
+        margin-top: 35px;
+    }
+    .talisman-content-item__right .button .addnew_img.green {
+        width: 50px;
+        height: 50px;
+        margin-right: 25px;
+    }
+    .talisman-content-item__right .button p {
+        font-size: 18px;
+    }
+    .general-section__item_buttons .interaction__button span {
+        font-size: 14px;
+    }
+
+    /**/
+    .poll_vars_item.poll_vars_item_yard .content-block__more {
+        padding: 12px 22px;
+    }
+    .poll_vars_item.poll_vars_item_yard .poll_wrap_button .content-block-more span {
+        font-size: 16px;
+    }
+
+
+.november_pic_right_title.november_pic_right_title_i {
+    color: #e30613;
+    padding-top: 40px;
+}
+
+.november_pic_more .scroll-down.addnew>p {
+    color: #e30613 !important;
+}
+
+.november_pic_more .scroll-down.addnew .addnew_img::before {
+    background-color: #e30613 !important;
+}
+
+.november_pic_more .scroll-down.addnew .addnew_img img {
+    background: transparent !important;
+    width: 16px;
+    height: 13px;
+}
+
+.november_pic.november_pic_test {
+    margin-top: 50px;
+}
+
+.november_pic_right_title {
+    font-size: 36px;
+}
+
+
+
+.november_pic_right_text {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+
+}
+
+@media screen and (max-width: 1279px) {
+
+
+    .tal_test_steps {
+        width: 50%;
+        /* text-align: right; */
+    }
+
+    .tal_test_questions_item_title {
+        font-size: 32px;
+    }
+
+    .tal_test_title {
+        font-size: 22px;
+        width: 50%;
+    }
+
+    .talisman-stages__content_item .item-box {
+        min-height: 260px;
+    }
+
+    .status__text {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    .tal_test_varitem {
+        font-size: 18px;
+        padding-left: 70px;
+    }
+
+    .tal_test_steps_item {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+        padding-top: 9px;
+    }
+
+    .tal_test_steps_item.passed:before {
+        width: 15px;
+        height: 15px;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+    }
+
+    span.tal_test_varitem_num {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        padding-top: 10px;
+        left: 20px;
+    }
+
+    .tal_test_varitem:after {
+        left: 29px;
+        width: 17px;
+    }
+
+    .tal_test_button .btn {
+        font-size: 20px;
+    }
+
+    .tal_test_results_item_title {
+        font-size: 32px;
+    }
+
+    .tal_test_results_item_title_ii {
+        font-size: 32px;
+    }
+
+    .tal_test_results_item_image img {
+        width: 45%;
+    }
+
+    .tal_test_results_item_text {
+        font-size: 18px;
+    }
+
+    .tal_test_results_item_count {
+        font-size: 22px;
+    }
+
+    .tal_test_results_item_button .btn {
+        font-size: 20px;
+    }
+    .talisman-stage2-prev>div>p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .talisman-single-box .title__name h3 {
+        /* line-height: 1.4; */
+    }
+
+    .talisman-single-box .title {
+        padding-bottom: 20px;
+    }
+    .talisman-stage2-prev>div>p {
+        font-size: 18px;
+    }
+
+    .info__subtitle {
+        margin-bottom: 10px;
+    }
+
+    .talisman {
+        margin-bottom: 30px;
+        /* border-bottom: 2px solid #f2eee6; */
+        padding-bottom: 29px;
+    }
+
+    .info__subtitle p {
+        font-size: 16px;
+    }
+
+    .tal_drafts_item_title {
+        font-size: 16px;
+        padding: 0 20px;
+        line-height: 1.4;
+        /* max-height: 46px; */
+        overflow: hidden;
+        /* min-height: 46px; */
+        height: 46px;
+    }
+
+    .tal_drafts_item_image {
+        height: 250px;
+        margin-bottom: 0px;
+        padding: 20px;
+    }
+
+    .tal_drafts_item_author {
+        padding: 0 20px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .tal_drafts_item_author .person__name span {
+        font-size: 12px;
+    }
+
+    .tal_drafts_item_author .person__name {
+        margin-left: -7px;
+    }
+
+    .tal_drafts_item_votes {
+        /* padding: 0 20px; */
+        margin-left: 20px;
+        margin-top: 20px;
+        padding-top: 17px;
+        font-size: 18px;
+    }
+
+    .tal_drafts_item_vote_box {
+        right: 0;
+        bottom: 0;
+    }
+
+    .tal_drafts_item_author .person {
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-pack: start;
+        -webkit-justify-content: start;
+        -moz-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+        -webkit-align-content: start;
+        -ms-flex-line-pack: start;
+        align-content: start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .tal_drafts_item_vote_box .card-vote-likes__button_like {
+        width: 55px;
+        height: 55px;
+    }
+
+    .tal_juri_list_item_img img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .tal_juri_list_item_img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .tal_juri_list_item_text {
+        padding-left: 20px;
+        padding-top: 15px;
+        padding-right: 70px;
+    }
+
+    .tal_juri_list_item_text_name {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    .tal_juri_list_item_text_func {
+        font-size: 14px;
+    }
+
+    .talisman-single-box .title__name h3 {
+        font-size: 28px;
+    }
+
+    .talisman-single-box .title {
+        padding-bottom: 20px;
+    }
+
+    .poll_title.poll_title_talisman {
+        font-size: 28px;
+    }
+
+    .poll_vars_item.poll_vars_item_talisman .poll_vars_item_title {
+        font-size: 18px;
+    }
+
+    .poll_vars_item.poll_vars_item_talisman {
+        /* margin-bottom: 0px; */
+    }
+
+    .poll_vars_item_image_wrap{
+        height: 173px;
+    }
+
+    .poll_vars_item_result_tal_t {
+        font-size: 17px;
+    }
+
+    .poll_vars_item_result_tal_total {
+        font-size: 17px;
+    }
+
+    .poll_vars_item_result_val {
+        font-size: 32px;
+    }
+
+    .poll_vars_item_check {
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .poll_vars_item.poll_vars_item_talisman .poll_vars_item_title {
+        padding-bottom: 30px;
+    }
+
+
+    .pp.pp_simple.pp_simple_rules.pp_simple_test .pp__content {
+        width: 800px;
+    }
+
+    .pp_c_list_wrap .tal_test_steps {
+        width: 100%;
+        text-align: left;
+    }
+
+    .pp.pp_simple.pp_simple_rules.pp_simple_test .pp_c_text p {
+        font-size: 18px;
+    }
+
+
+    .talisman-single-box.stage-2{
+        margin-top: 60px;
+    }
+
+    /*  */
+
+
+    .talisman-comm-info__text {
+        font-size: 16px;
+    }
+
+    .talisman-comm-info {
+        margin-left: 0;
+        padding: 34px 38px;
+    }
+
+    .talisman-comm {
+        grid-template-columns: 436px calc(100% - 436px);
+    }
+
+    .talisman-comm-vis__img {
+        height: 302px;
+    }
+
+    .talisman-comm-vis__text {
+        font-size: 22px;
+    }
+
+    .talisman-comm-info__btn .addnew>p {
+        font-size: 16px;
+    }
+
+    .talisman-comm-info__btn .addnew_img {
+        width: 28px;
+        height: 28px;
+        margin-left: 16px !important;
+    }
+
+    .pp-talisman-comm-text {
+        font-size: 18px;
+    }
+
+    .talisman-page .general-section__item_title>img {
+        width: 392px;
+    }
+
+    .talisman-comm-pers__info-name {
+        font-size: 18px;
+    }
+
+    .talisman-comm-pers__info-city {
+        font-size: 16px;
+    }
+
+    /* yards */
+
+    .district-wrap {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .yard-top__back span {
+        font-size: 16px;
+    }
+    .yard-top__title span {
+        font-size: 40px;
+    }
+    .yard-top__nums {
+        font-size: 16px;
+    }
+    .poll_vars_item_more.pp_ {
+        font-size: 14px;
+    }
+    .poll_vars_item_result_val {
+        font-size: 26px;
+    }
+    .btn.btn-vote-green {
+        padding: 14px 34px;
+    }
+    .btn.btn-vote-green span {
+        font-size: 14px;
+    }
+    .btn.btn-yards-more span {
+        font-size: 22px;
+    }
+    .btn.btn-yards-more {
+        padding: 22px 42px;
+    }
+
+    /* yards - end */
+
+    /**/
+    .poll_vars_item.poll_vars_item_yard .poll_wrap_button .content-block-more span {
+        font-size: 12px;
+    }
+.november_pic_right_title {
+    font-size: 28px;
+}
+
+.november_pic_right_text {
+    font-size: 18px;
+}
+
+.title__name h3 {
+    font-size: 32px;
+}
+
+
+}
+
+@media screen and (max-width: 1023px) {
+
+    .poll_vars_item_result_tal_t {
+        font-size: 17px;
+    }
+
+    .poll_vars_item_result_tal_total {
+        font-size: 17px;
+    }
+
+    .poll_vars_item_result_val {
+        font-size: 32px;
+    }
+
+    .poll_vars_item_check {
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+        line-height: 38px;
+    }
+
+    .poll_vars_item.poll_vars_item_talisman .poll_vars_item_title {
+        padding-bottom: 30px;
+    }
+
+    .talisman-stages__tabs_item {
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+
+    .talisman-content-item__left_name>span:first-child {}
+
+    .tal_test_questions_item_title {
+        font-size: 27px;
+    }
+
+    .tal_test_steps {
+        position: relative;
+        /* text-align: center; */
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        top: 0;
+    }
+
+    .tal_test_title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tal_test_results_item {
+        width: 100%;
+    }
+
+    .tal_test_results {
+        top: 130px;
+    }
+
+    .talisman-stage2-prev>div>p {
+        font-size: 16px;
+    }
+
+    .info__item__gallery.info__item__gallery_talisman .upload__area.upload__area-small.multiple.uploaded {
+        width: -webkit-calc(100% / 3 - 10px);
+        width: -moz-calc(100% / 3 - 10px);
+        width: calc(100% / 3 - 10px);
+        height: initial;
+    }
+
+    .talisman-stage2-form .small_phone {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .info__item-box {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .talisman-stage2-form .information {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .imgaes-uploading {
+        width: 100%;
+    }
+
+    .tal_drafts_item {
+        width: -webkit-calc(100% / 2 - 15px);
+        width: -moz-calc(100% / 2 - 15px);
+        width: calc(100% / 2 - 15px);
+    }
+
+    .tal_drafts_item:nth-child(3n+3) {
+        margin-right: initial;
+        margin-right: 30px;
+    }
+
+    .tal_drafts_item {}
+
+    .tal_drafts_item:nth-child(2n+2) {
+        margin-right: 0px;
+    }
+
+    .tal_juri_list_item_img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tal_juri_list_item_img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tal_juri_list_item_text {
+        padding-left: 15px;
+        padding-top: 9px;
+        padding-right: 30px;
+        width: -webkit-calc(100% - 70px);
+        width: -moz-calc(100% - 70px);
+        width: calc(100% - 70px);
+    }
+
+    .tal_juri_list_item_text_name {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .tal_juri_list_item_text_func {
+        font-size: 12px;
+    }
+
+    .poll_vars_item.poll_vars_item_talisman .poll_vars_item_title {
+        font-size: 16px;
+    }
+
+    .poll_vars_item_result_val {
+        font-size: 24px;
+    }
+
+    .poll_vars_item_result_tal_t {
+        font-size: 15px;
+    }
+
+    .poll_vars_item_result_tal_total {
+        font-size: 15px;
+    }
+
+    .poll_vars_item_result_bar {
+        height: 4px;
+    }
+
+    .poll_vars_item_talisman_box {
+        margin-bottom: 10px;
+    }
+    .talisman-page .general-section__item_title h1 {
+        font-size: 30px;
+    }
+
+    .talisman-stages {
+        margin: 0;
+    }
+
+    .poll_vars_item_image_wrap {
+        height: 153px;
+    }
+
+    /*  */
+
+    .talisman-page .general-section__item_title>img {
+        width: 328px;
+        margin-bottom: 0;
+    }
+
+    .talisman-page .general-section__item_text {
+        width: 54%;
+    }
+
+    .talisman-page .general-section__item_title {
+        width: 46%;
+    }
+
+    .addnew.scroll-down .addnew_img {
+        width: 36px;
+        height: 36px;
+        margin-left: 16px;
+    }
+
+    .addnew.scroll-down>p {
+        font-size: 16px;
+    }
+
+    .section__inner.general-section.general-section_talisman>.grid__content {
+        min-height: 580px;
+    }
+
+    .section__inner.general-section.general-section_talisman h1 {
+        margin-bottom: 32px;
+    }
+
+    .talisman-content-item__left_name>span:first-child {
+        font-size: 40px;
+    }
+
+    .talisman-content-item__left_name>span:last-child {
+    }
+
+    .talisman-content-item__right_descr>span:first-child {
+        font-size: 26px;
+    }
+
+    .talisman-content-item__right_descr>span:last-child {
+        font-size: 16px;
+    }
+
+    .talisman-comm-vis__text {
+        font-size: 20px;
+    }
+
+    .talisman-comm-info__text {
+        font-size: 14px;
+    }
+
+    .talisman-comm-info:before {
+        width: 85px;
+        height: 64px;
+    }
+
+    .talisman-comm-info:after {
+        width: 22px;
+        height: 22px;
+        left: -16px;
+    }
+
+    .talisman-comm-vis {
+        margin-right: 28px;
+    }
+
+    .talisman-comm {
+        grid-template-columns: 336px calc(100% - 336px);
+    }
+
+    .talisman-comm-pers__info-name {
+        font-size: 16px;
+    }
+
+    .talisman-comm-pers__info-city {
+        font-size: 13px;
+    }
+
+    .talisman-comm-pers__img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .talisman-comm-pers__info {
+        width: calc(100% - 50px);
+        padding-left: 18px;
+    }
+
+    .talisman-comm-info__pers {
+        margin-bottom: 22px;
+    }
+
+    .talisman-comm-info__btn .addnew>p {
+        font-size: 14px;
+    }
+
+    .talisman-comm-vis__img {
+        height: 228px;
+    }
+
+    /*  yards  */
+
+    .district {
+        padding: 42px 22px 28px;
+    }
+    .btn.district-btn {
+        padding: 12px 24px;
+    }
+    .pp.pp_simple.pp_simple_rules.pp_simple_test .pp__content {
+        width: 600px;
+    }
+
+    /*  yards - end */
+
+    /*    */
+    .poll_vars_item.poll_vars_item_yard .poll_wrap_button .content-block-more span {
+        font-size: 11px;
+    }
+    .poll_vars_item.poll_vars_item_yard .content-block__more {
+        padding: 6px 16px;
+    }
+.section__inner.general-section.general-section_talisman.general-section_november h1 {
+    font-size: 34px;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.section__inner.general-section.general-section_talisman.general-section_november .addnew.scroll-down {
+    margin-top: 20px;
+}
+
+.november_pic_right_title {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.november_pic_right_text {
+    font-size: 16px;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .talisman-page .section__inner.general-section.general-section_showcase {
+        margin-top: 0;
+        margin-bottom: 0;
+        background-image: url(../images/default-bg.jpg) !important;
+    }
+
+    .talisman-page .section__inner.general-section.general-section_showcase.general-section_showcase_h>.grid__content {
+        margin-top: 0;
+        min-height: 0;
+    }
+
+    .talisman-page .general-section__item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+        -moz-box-orient: vertical;
+        -moz-box-direction: reverse;
+        flex-direction: column-reverse;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: flex;
+
+        margin-bottom: 0;
+    }
+
+    .talisman-page .section__inner.general-section.general-section_showcase .general-section__item_title {
+        margin-top: 40px;
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .talisman-page .section__inner.general-section.general-section_showcase.general-section_showcase_h .general-section__item_text {
+        width: 88.2666666667%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .talisman-page .section__inner.general-section.general-section_showcase.general-section_showcase_h .general-section__item_text h1 {
+        font-size: 30px;
+        line-height: normal;
+        margin-bottom: 20px;
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .talisman-stages {
+        margin-top: 10px;
+    }
+
+    .talisman-stages__tabs {
+        margin-bottom: 50px;
+        overflow-x: auto;
+    }
+
+    .talisman-stages__tabs_item {
+        font-size: 20px;
+        padding-right: 35px;
+        white-space: nowrap;
+    }
+
+    .talisman-stages__content_item .item-box{
+        display: block;
+        min-height: 450px;
+    }
+    .talisman-stages__content{
+        min-height: 450px;
+        margin-bottom: 20px;
+    }
+    .talisman-stages__content:last-child{
+        margin-bottom: 0;
+    }
+    .talisman-content-item__left_name>span:first-child {
+        font-size: 44px;
+        margin-bottom: 20px;
+    }
+    .talisman-content-item__left_status{
+        margin-top: 35px;
+    }
+
+    .talisman-content-item__left{
+        margin-bottom: 65px;
+    }
+
+    .talisman-content-item__right {
+        width: 100%;
+    }
+
+    .talisman-content-item__right_descr>span:first-child {
+        margin-bottom: 25px;
+        font-size: 22px;
+        line-height: normal;
+    }
+
+    .talisman-content-item__right_descr>span:last-child {
+        font-size: 14px;
+    }
+
+    .general-section__item_buttons .interaction__button:last-child {
+        width: auto;
+    }
+    .general-section__item_buttons .interaction__button:last-child span {
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .talisman-single-page .section__inner.general-section.general-section_showcase{
+        background-image: url(../images/default-bg.jpg) !important;
+    }
+    .talisman-single-page .section__inner.general-section.general-section_showcase.general-section_showcase_h>.grid__content {
+        height: auto;
+        margin-top: 0;
+        min-height: 0;
+        margin-bottom: 0;
+    }
+
+    .talisman-single-page .section__inner.general-section.general-section_showcase .general-section__item_title{
+        display: block;
+        margin-bottom: 65px;
+    }
+
+    .talisman-single-page .section__inner.general-section.general-section_showcase.general-section_showcase_h .general-section__item_text {
+        padding: 0;
+        width: 100%;
+    }
+
+    .talisman-single-page .section__inner.general-section.general-section_showcase.general-section_showcase_h .general-section__item_text h1 {
+        font-size: 24px;
+        line-height: 30px;
+        padding-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .talisman-single-box .title__name h3 {
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    .talisman-single-box .title {
+        padding-bottom: 30px;
+    }
+
+    .talisman-single-box .content-block__title {
+        margin-bottom: 40px;
+    }
+
+    .vouting-form__row .checkbox-box__item:not(:first-of-type),
+    .vouting-form__row .checkbox-box__item:last-child:nth-child(4){
+        margin-left: 40px;
+        margin-right: 0;
+    }
+    .vouting-form__row>span {
+        font-size: 16px;
+        margin-right: 25px;
+    }
+
+    .talisman-stage1-vouting__voute-box:not(:last-child) {
+        margin-bottom: 45px;
+    }
+
+    .talisman-stage1-vouting__voute-box_form.row{
+        display: block;
+    }
+
+    .vouting-form__col{
+        width: 100%;
+    }
+    .vouting-form__col:not(:last-child){}
+
+
+    .talisman-stages__tabs {
+        width: -webkit-calc(100% + 0%);
+        width: -moz-calc(100% + 0%);
+        width: calc(100% + 0%);
+        overflow-x: auto;
+        left: 0%;
+        position: relative;
+    }
+
+    .talisman-stages__tabs_item {
+        width: 100px;
+    }
+
+    .tal_test_questions_item_title {
+        font-size: 20px;
+    }
+
+    .tal_test_varitem {
+        font-size: 16px;
+        padding-left: 70px;
+        padding-right: 20px;
+    }
+
+    .tal_test_results_item_title {
+        font-size: 26px;
+    }
+
+    .tal_test_results_item_title_ii {
+        font-size: 28px;
+    }
+
+    .tal_test_results_item_text {
+        width: 100%;
+    }
+
+    .talisman-stage2-prev>div {
+        width: 100%;
+    }
+
+    .talisman-stage2-prev {
+        display: block;
+    }
+
+    .talisman-stage2-prev>img {
+        display: none;
+    }
+
+    .information .checkbox-box__item {
+        width: 100%;
+    }
+
+    .info__item__gallery.info__item__gallery_talisman .upload__area.upload__area-small.multiple.uploaded {
+        width: -webkit-calc(100% / 3 - 10px) !important;
+        width: -moz-calc(100% / 3 - 10px) !important;
+        width: calc(100% / 3 - 10px) !important;
+        height: initial;
+        float: left;
+        margin-right: 10px !important;
+    }
+
+    .tal_drafts_item {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .tal_juri_list_item {
+        width: 100%;
+        border-bottom: 1px solid #f3f3f3;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        padding-right: 0;
+    }
+    .tal_juri_list_item::before{
+        opacity: 0;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    .tal_juri_list_item:nth-child(even) {
+        padding-right: 0;
+        padding-left: 0;
+        border-left: none;
+    }
+    .tal_juri_list_item:last-child {
+        border-bottom: 0px;
+        padding-bottom: 0;margin-bottom: 0;
+    }
+
+    .tal_juri_list_item:last-child {
+        border-bottom: 0px;
+    }
+
+    .tal_juri_list {
+        margin-bottom: 50px;
+    }
+
+    .talisman-stage-waiting .select.select_filled {
+        position: relative;
+        width: 100%;
+    }
+
+    .poll_vars_item.poll_vars_item_talisman {
+        width: 100%;
+        margin-bottom: 60px;
+        margin-right: 0;
+        /* height: 370px; */
+    }
+
+    .poll_vars_item_image_wrap {
+        height: -webkit-calc(100vw / 1.5);
+        height: -moz-calc(100vw / 1.5);
+        height: calc(100vw / 1.5);
+    }
+    .talisman-content-item__left_name {
+        margin-top: 40px;
+    }
+
+    .talisman-content-item__left {
+        margin-top: -50px;
+        margin-bottom: 38px;
+    }
+    .pp.pp_simple.pp_simple_rules.pp_simple_test .pp__content {
+        width: 90%;
+    }
+
+    .pp.pp_simple.pp_simple_rules.pp_simple_test h2 {
+        font-size: 26px;
+    }
+
+    .pp.pp_simple.pp_simple_rules.pp_simple_test .pp_c_text p {
+        font-size: 14px;
+    }
+
+    .tal_test_steps_item {
+        margin-right: 5px;
+    }
+
+    .pp_c_list_wrap .tal_test_questions_item_title {
+        font-size: 20px;
+    }
+
+    .tal_test_result_share_title {
+        font-size: 18px;
+    }
+
+    .talisman-page .general-section__item_title {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .talisman-page .general-section__item_text {
+        width: 100%;
+    }
+
+    .talisman-page .general-section__item {
+        -webkit-box-direction: column;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        flex-direction: column;
+    }
+
+    .section__inner.general-section.general-section_talisman {
+        padding-top: 120px;
+    }
+    .talisman-stages__content_item .item-box {
+        min-height: initial;
+    }
+    .tal_juri_list_item_text_name {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .tal_juri_list_item_text_func {
+        line-height: 14px;
+    }
+    .tal_juri_list_item_img {
+        width: 80px;
+        height: 80px;
+        margin-right: 25px;
+    }
+
+    .poll_vars{
+        display: block;
+    }
+
+
+    /*  */
+
+    .talisman-page .general-section__item_title>img {
+        height: 300px;
+        margin-top: -32px;
+        margin-bottom: -52px;
+    }
+
+    .status__text {
+        font-size: 13px;
+        padding: 12px 32px;
+        padding-left: 18px;
+    }
+
+    .status__img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .talisman-comm-vis__text {
+        margin-bottom: 0;
+    }
+
+    .talisman-comm {
+        display: block;
+        grid-template-columns: auto;
+        margin-top: 36px;
+        padding-top: 36px;
+    }
+
+    .talisman-comm-vis__img {
+        margin-top: 0;
+    }
+
+    .talisman-comm-vis {
+        margin-right: 0;
+        padding: 28px 0;
+        margin-bottom: 28px;
+    }
+
+    .talisman-comm-info:after {
+        display: none;
+    }
+
+    .pp-talisman-comm-text {
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .pp__talisman-comm {
+        padding: 18px 12px;
+    }
+
+    .pp-talisman-comm-pers:after, .pp-talisman-comm-pers:before {
+        width: calc(50% - 40px - 24px);
+    }
+
+    .pp-talisman-comm-pers {
+        margin-bottom: 22px;
+    }
+
+    .addnew.scroll-down {
+        margin-top: 30px;
+    }
+
+    .poll_title.poll_title_talisman {
+        font-size: 22px;
+    }
+
+    .talisman-stage-waiting p {
+        font-size: 14px;
+    }
+
+    .talisman-stage-waiting .poll_meta_item {
+        font-size: 14px;
+    }
+
+    .talisman-stages__tabs {
+        width: calc(100% + 14%);
+        margin-left: -7%;
+        padding: 0 7%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 12px;
+    }
+
+    .talisman-stages__tabs_item {
+        min-width: 162px !important;
+        width: auto;
+    }
+
+    /*  yards  */
+
+    .btn.btn-yards-more span {
+        line-height: 1.1;
+    }
+    .pp.pp_simple.pp_simple_rules.pp_simple_test .pp__content {
+        width: 90%;
+    }
+    .content-block__adr {
+        font-size: 24px;
+    }
+    .content-block__yard span {
+        font-size: 14px;
+    }
+    .swiper-container.swiper-container_yard {
+        height: 200px;
+    }
+    .pp-content__text iframe {
+        height: 200px;
+        margin-bottom: 32px;
+    }
+    .swiper-pagination.swiper-pagination_yard {
+        font-size: 22px;
+    }
+    .content-block__yard:after {
+        display: none;
+    }
+
+    .yard-top__title span {
+        font-size: 24px;
+        padding: 0;
+    }
+    .yard-top__title:after {
+        display: none;
+    }
+    .yard-top__back span {
+        font-size: 12px;
+    }
+    .yard-top__title {
+        margin-bottom: 8px;
+    }
+    .yard-top__nums {
+        font-size: 12px;
+    }
+    .poll_vars {
+        margin-top: 42px;
+    }
+    .district-wrap {
+        grid-template-columns: 1fr;
+    }
+    .district-wrap {
+        margin-top: 58px;
+    }
+    .poll_vars_item.poll_vars_item_talisman .poll_vars_item_title {
+        padding-bottom: 22px;
+    }
+    .poll_vars:not(.show_results) .poll_vars_item_more.poll_vars_item_vote {
+        margin-bottom: 28px;
+    }
+
+    /* yards - end */
+
+    /*    */
+    .poll_vars_item.poll_vars_item_yard .poll_wrap_button {
+        height: 24px;
+    }
+    .poll_vars_item.poll_vars_item_yard .content-block__more {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        padding: 12px 32px;
+    }
+    .poll_vars_item.poll_vars_item_yard .poll_wrap_button .content-block-more span {
+        font-size: 12px;
+    }
+
+    /*    */
+
+    .yardfin-title {
+        display: block;
+    }
+
+    .yardfin-title-switch {
+        margin-left: 0;
+        margin-right: 36px;
+    }
+
+    .yardfin-title__switches {
+        margin-top: 32px;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+
+    .yardfin-title-switch__txt {
+        width: calc(100% - 30px);
+        padding-left: 18px;
+        font-size: 14px;
+    }
+
+    .yardfin-title-switch__ico {
+        width: 30px;
+        height: 22px;
+    }
+
+    .yardfin-title-switch__ico img {
+        width: 100%;
+    }
+
+    .yardfin-card-img {
+        width: 100%;
+        height: 312px;
+    }
+
+    .yardfin-card-content .talisman-comm-info {
+        width: 100%;
+        margin-left: 0;
+        padding: 28px 28px;
+    }
+
+    .yardfin-card-content {
+        display: block;
+    }
+
+    .yardfin-card-img__adr {
+        width: 85%;
+    }
+
+    .yardfin-card .talisman-comm-info__text p {
+        height: auto;
+    }
+
+	.section__inner.general-section.general-section_talisman.general-section_november .general-section__item_title img {
+    height: 200px;
+}
+
+.section__inner.general-section.general-section_talisman.general-section_november h1 {
+    margin-top: 0px;
+}
+
+.november_pic_left {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.november_pic_left img {
+    max-width: 100%;
+}
+
+.november_pic_right {
+    width: 100%;
+}
+
+.title__name h3 {
+    font-size: 22px;
+    line-height: 1.2;
+}
+.talisman-stage-active.talisman-stage-active_form.november_form .checkbox__text {
+    display: block;
+}
+.checkbox__text a{
+	display:contents;
+}
+
+}
+
+
+/* New styles for policy warning */
+.grid__content .talisman-stages__content:last-child {
+    margin-bottom: 0;
+}
+.talisman-stages.yards-edition .talisman-stages__content_item.double .item-box:last-child {
+    margin-bottom: 0;
+}
+/* End styles for policy warning */

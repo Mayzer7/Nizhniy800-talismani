@@ -1,0 +1,206 @@
+.events_title {
+    position: absolute;
+    width: 100%;
+}
+
+.events_section {
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.events_section .content-block__title {
+    margin-bottom: 65px;
+}
+
+.events_section__title {
+    font-weight: normal;
+}
+
+.events_section__title-link {
+    position: relative;
+    padding-right: 45px;
+    font-size: 24px;
+    line-height: 44px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.events_section__title-link::after {
+    content: "";
+    width: 33px;
+    height: 11px;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-image: url('../images/eventsBlackArrow.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.5);
+}
+
+.position-relative {position: relative;}
+.eventsSwiper {
+    box-sizing: border-box;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   /*  position: relative; */
+    overflow: hidden;
+}
+/* .eventsSwiper .swiper-slide {
+    opacity: .5;
+    transition: .5s ease-out;
+}
+.eventsSwiper .swiper-slide.swiper-slide-prev,
+.eventsSwiper .swiper-slide.swiper-slide-active, 
+.eventsSwiper .swiper-slide.swiper-slide-next {opacity: 1;} */
+
+.eventsSwiper .swiper-button-prev,
+.eventsSwiper .swiper-button-next {
+    top: 50%;
+    width: 15px;
+    height: 30px;
+    margin-top: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #000;
+    background-image: none;
+    font-size: 25px;
+    float: unset;
+}
+.eventsSwiper .swiper-button-prev svg,
+.eventsSwiper .swiper-button-next svg {display:none;}
+.eventsSwiper .swiper-button-prev {
+    left: -25px;
+    background-image: url(../images/tourist-swiper-btn-left.svg);
+}
+.eventsSwiper .swiper-button-next {
+    right: -25px;
+    background-image: url(../images/tourist-swiper-btn-right.svg);
+}
+
+.eventsSwiper__card {
+    position: relative;
+    overflow: hidden;
+    height: 33vw;
+    padding: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: space-between;
+    /* overflow: hidden; */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+}
+.eventsSwiper__card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+}
+.eventsSwiper__cardHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.eventsSwiper__cardBadge {
+    display: inline-flex;
+    align-items: center;
+    height: 45px;
+    position: relative;
+    padding: 0px 40px;
+    border-radius: 101.833px;
+    color: #e35b00;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.eventsSwiper__text {
+    position: relative;
+    z-index: 1;
+    font-family: 'Platform LC Web', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: left;
+    color: #fff;
+}
+.eventsSwiper__dateText {
+    display: inline-flex;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .65);
+    color: #fff;
+    font-size: 14px;
+}
+
+.banner-box {
+    display: grid;
+    grid-template-columns: auto 40%;
+    grid-column-gap: 3.08333333%;
+    padding: 80px 0px;
+    margin: 0px;
+}
+.banner-box figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.banner-box h2, .banner-box p {margin-bottom: 1em;}
+.banner-box img {width: 100%;}
+
+@media (min-width: 1400px){
+    .eventsSwiper__card {height: 450px;}
+}
+@media (max-width: 1199px){
+    .eventsSwiper__card {padding: 20px;}
+    .eventsSwiper__text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .eventsSwiper__cardBadge {
+        height: 30px;
+        font-size: 10px;
+        margin-bottom: 30px;
+    }
+    .eventsSwiper__dateText{font-size: 9px;}
+}
+@media (max-width: 799px){
+    .eventsSwiper .swiper-slide.swiper-slide-prev {opacity: .5;}
+    .eventsSwiper__card {
+        height: 45vw;
+        padding: 10px;
+    }
+    .banner-box {grid-template-columns:1fr;}
+    .banner-box img {margin-bottom: 1em;}
+}
+@media (max-width: 500px){
+    .eventsSwiper .swiper-slide.swiper-slide-next {opacity: .5;}
+    .eventsSwiper__card {
+        height: 90vw;
+        padding: 16px;
+    }
+}

@@ -1,0 +1,913 @@
+<!DOCTYPE html><html lang="ru" class="page"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нижний800 / Официальный портал 800-летия Нижнего Новгорода</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="# Нижний 800 ">
+    <meta name="keywords" content="Главная">
+    <meta name="description" content="На портале можно узнать ключевые новости и подробную информацию о подготовке к празднованию юбилея.">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta property="og:title" content="Нижний800 / Официальный портал 800-летия Нижнего Новгорода">
+    <meta property="og:description" content="На портале можно узнать ключевые новости и подробную информацию о подготовке к празднованию юбилея.">
+    <meta property="og:url" content="https://nizhny800.ru/">
+    <meta property="og:image" content="images/og_800.png">
+    <meta property="og:image:secure_url" content="images/og_800.png">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site name" content="# Нижний 800 ">
+    <link rel="preload" href="html/static/fontsnew/GraphikLCG-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="16x16" href="images/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="48x48" href="images/favicon-48.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="images/favicon-96.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="160x160" href="images/favicon-160.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="images/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="images/favicon-256.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="images/favicon-512.png">
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bundle.css">
+    <link rel="stylesheet" href="css/main-new.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-extra.css">
+
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/special.css">
+    <link rel="stylesheet" href="css/talisman.css">
+    <link rel="stylesheet" href="css/eventsSection.css">
+
+                        <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"))
+            let active = false;
+            if (lazyImages.length > 0) {
+                const lazyLoad = function () {
+                    if (active === false) {
+                        active = true;
+
+                        setTimeout(function () {
+                            lazyImages.forEach(function (lazyImage) {
+                                if ((lazyImage.getBoundingClientRect().top <= window.innerHeight + 500 && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !==
+                                    "none") {
+                                    lazyImage.src = lazyImage.dataset.src;
+                                    //lazyImage.srcset = lazyImage.dataset.srcset;
+                                    lazyImage.classList.remove("lazy");
+
+                                    lazyImages = lazyImages.filter(function (image) {
+                                        return image !== lazyImage;
+                                    });
+
+                                    if (lazyImages.length === 0) {
+                                        document.removeEventListener("scroll", lazyLoad);
+                                        window.removeEventListener("resize", lazyLoad);
+                                        window.removeEventListener("orientationchange",
+                                            lazyLoad);
+                                    }
+                                }
+                            });
+
+                            active = false;
+                        }, 200);
+                    }
+                };
+
+                lazyLoad();
+                document.addEventListener("scroll", lazyLoad);
+                window.addEventListener("resize", lazyLoad);
+                window.addEventListener("orientationchange", lazyLoad);
+            }
+        });
+    </script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=bb34617d-47c3-4cd5-ad4a-f6e86d49022a&lang=ru_RU"></script>
+</head>
+
+
+<body>
+<div class="blind-panel-back"></div>
+<div class="blind-panel">
+    <div class="button blind_mode">
+        <img src="images/eye-invert.svg" alt="blind_mode">
+    </div>
+
+    <div>Размер шрифта:</div>
+    <div class="button js-font" data-fontsize="small">A</div>
+    <div class="button js-font" data-fontsize="mid">A+</div>
+    <div class="button js-font" data-fontsize="big">A++</div>
+    <div>Межстрочный интервал:</div>
+    <div class="button js-lineheight" data-lineheight="regular">И</div>
+    <div class="button js-lineheight" data-lineheight="incr">И+</div>
+    <div>Цвет :</div>
+    <div class="button js-scheme sh1" data-scheme="bw" style="background: #fff !important; color: #000 !important;">
+        Ч/Б</div>
+    <div class="button js-scheme sh2" data-scheme="wb" style="background: #000 !important; color: #fff !important;">
+        Б/Ч</div>
+    <div class="button js-scheme sh3" data-scheme="yb" style="background: #0000ff !important; color: #ffff00 !important;">Ж/С</div>
+
+    <div>Изображения:</div>
+    <div class="button js-images" data-on="true">Вкл</div>
+
+</div>
+<div class="preloader">
+    <div class="preloader__logo">
+        <svg viewBox="0 0 291 41" xmlns="http://www.w3.org/2000/svg">
+            <path d="M286.829 34.5036H275.465V11.4793H286.891L286.829 34.5036ZM271.886 7.96172V38.0458H290.335V7.96172H271.886ZM204.325 38.0458V7.96172H200.722L181.781 32.4373V7.96172H178.165V38.0458H181.781L200.722 13.8654V38.0458H204.325ZM131.993 38.0458V7.96172H128.389V21.1834H115.893V7.96172H112.277V38.0458H115.893V24.7994H128.389V38.0458H131.993ZM168.165 38.0458V7.96172H164.549L145.608 32.4373V7.96172H142.005V38.0458H145.608L164.549 13.8654V38.0458H168.165ZM86.387 23.0161L100.261 38.0458H105.279L91.2821 23.0161L105.279 7.98631H100.261L86.387 23.0161ZM82.5987 38.0458H86.1656V7.96172H82.5987V38.0458ZM185.68 0.569824V4.18582H196.847V0.569824H185.68ZM82.3651 22.9915L68.4914 7.96172H63.461L77.4453 22.9915L63.4856 38.0458H68.516L82.3651 22.9915ZM260.607 34.5036H249.181V11.4793H260.607V34.5036ZM245.664 7.96172V38.0458H264.113V7.96172H245.664ZM20.3271 38.0458V7.96172H16.7234V21.1834H4.21503V7.96172H0.611328V38.0458H4.21503V24.7994H16.7234V38.0458H20.3271ZM56.4873 38.0458V7.96172H52.8466L33.9056 32.4373V7.96172H30.3388V38.0458H33.9425L52.8466 13.8408V38.0458H56.4873ZM221.114 17.8749L226.317 22.9915L221.114 28.108L228.075 35.1432L235.037 28.108L229.834 22.9915L235.037 17.8749L228.075 10.8398L221.114 17.8749ZM228.075 5.77244L240.018 17.8749L234.877 22.9915L240.08 28.108L228.137 40.2105L216.194 28.108L221.397 22.9915L216.194 17.8749L228.075 5.77244Z"></path>
+        </svg>
+    </div>
+</div>
+<div class="wrap">
+    <!--main-->
+    <div class="grid">
+        <div class="grid__left">
+
+            <!--header-->
+
+            <header class="header fixed-block  header--main ">
+
+
+                <div class="grid__content">
+
+
+                    <div class="header__inner  ">
+
+                        <div class="header__inner_item header__new">
+                            <div class="item__menu">
+                                <div class="item__menu_mobile">
+                                    <div class="menu__mobile_item"></div>
+                                    <div class="menu__mobile_item"></div>
+                                    <div class="menu__mobile_item"></div>
+                                </div>
+                                <div class="item__menu_logo">
+                                    <a href="https://nizhny800.ru/">
+                                        <svg width="291" height="41" viewBox="0 0 291 41" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M286.829 34.5036H275.465V11.4793H286.891L286.829 34.5036ZM271.886 7.96172V38.0458H290.335V7.96172H271.886ZM204.325 38.0458V7.96172H200.722L181.781 32.4373V7.96172H178.165V38.0458H181.781L200.722 13.8654V38.0458H204.325ZM131.993 38.0458V7.96172H128.389V21.1834H115.893V7.96172H112.277V38.0458H115.893V24.7994H128.389V38.0458H131.993ZM168.165 38.0458V7.96172H164.549L145.608 32.4373V7.96172H142.005V38.0458H145.608L164.549 13.8654V38.0458H168.165ZM86.387 23.0161L100.261 38.0458H105.279L91.2821 23.0161L105.279 7.98631H100.261L86.387 23.0161ZM82.5987 38.0458H86.1656V7.96172H82.5987V38.0458ZM185.68 0.569824V4.18582H196.847V0.569824H185.68ZM82.3651 22.9915L68.4914 7.96172H63.461L77.4453 22.9915L63.4856 38.0458H68.516L82.3651 22.9915ZM260.607 34.5036H249.181V11.4793H260.607V34.5036ZM245.664 7.96172V38.0458H264.113V7.96172H245.664ZM20.3271 38.0458V7.96172H16.7234V21.1834H4.21503V7.96172H0.611328V38.0458H4.21503V24.7994H16.7234V38.0458H20.3271ZM56.4873 38.0458V7.96172H52.8466L33.9056 32.4373V7.96172H30.3388V38.0458H33.9425L52.8466 13.8408V38.0458H56.4873ZM221.114 17.8749L226.317 22.9915L221.114 28.108L228.075 35.1432L235.037 28.108L229.834 22.9915L235.037 17.8749L228.075 10.8398L221.114 17.8749ZM228.075 5.77244L240.018 17.8749L234.877 22.9915L240.08 28.108L228.137 40.2105L216.194 28.108L221.397 22.9915L216.194 17.8749L228.075 5.77244Z"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="item__menu_user">
+                                    <div class="user__weather blind_mode">
+                                        <img src="images/eye.svg" alt="eye">
+                                    </div>
+                                    <a class="store__link" onclick="ym(55467490,'reachGoal','header_shop');" target="_blank" href="https://store.nizhny800.ru/">
+                                        <span>Интернет-магазин</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__inner_item mobile-menu header__new">
+                            <div class="item__menu">
+                                <div class="item__menu_items">
+                                    <div class="menu__items-cont">
+
+                                                                                                                        <div class="menu__items_item  " data-layer="2">
+                                            <a>О 800-летии</a>
+                                        </div>
+                                                                                                                        <div class="menu__items_item  " data-layer="3">
+                                            <a>Проекты 800</a>
+                                        </div>
+                                                                                                                        <div class="menu__items_item  " data-layer="4">
+                                            <a>Ключевые события</a>
+                                        </div>
+                                                                                                                        <div class="menu__items_item  " data-layer="5">
+                                            <a>В фокусе</a>
+                                        </div>
+                                                                                                                        <div class="menu__items_item  " data-layer="6">
+                                            <a>Спецпроекты</a>
+                                        </div>
+                                                                                                                        <div class="menu__items_item  news  " data-layer="7">
+                                            <a href="/partnyory-800-letiya/">Партнёры</a>
+                                        </div>
+                                                                                 
+                                    </div>
+                                </div>
+                                <div class="menu-store-mobile">
+                                    <a class="store__link" onclick="ym(55467490,'reachGoal','header_shop');" target="_blank" href="https://store.nizhny800.ru/">
+                                        <span>Интернет-магазин</span>
+                                    </a>
+                                </div>
+                                <div class="item__menu_sn-box">
+
+                                                                        <a href="https://ok.ru/nizhny800" target="_blank" rel="noreferrer noopener nofollow" class="sn-box__item">
+                                        <img src="images/ok-icon.svg" alt="одноклассники">
+                                    </a>
+                                                                        <a href="https://t.me/nizhny800" target="_blank" rel="noreferrer noopener nofollow" class="sn-box__item">
+                                        <img src="images/telegram-icon.svg" alt="telegram">
+                                    </a>
+                                                                        <a href="https://www.youtube.com/channel/UCY9nch3eFIvRcs9i8HAb-qA" target="_blank" rel="noreferrer noopener nofollow" class="sn-box__item">
+                                        <img src="images/youtube-152810-1.svg" alt="youtube">
+                                    </a>
+                                                                        <a href="https://clck.ru/T8pw6" target="_blank" rel="noreferrer noopener nofollow" class="sn-box__item">
+                                        <img src="images/ydezn.svg" alt="ydezn">
+                                    </a>
+                                                                        <a href="https://vk.com/nizhny800" target="_blank" rel="noreferrer noopener nofollow" class="sn-box__item">
+                                        <img src="images/vk_black.svg" alt="vk">
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                            <form class="search-elem" action="/rezultaty-poiska.html" method="get">
+                                <button type="button" class="search-elem-button"></button>
+                                <input class="search-elem-input" type="text" name="search" id="search" value="" placeholder="Что вы ищете?">
+                                <button type="button" class="search-elem-reset"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header__additional-layer header__new">
+                                                                            <div class="header__additional-layer_item" data-layer="2">
+                            <div>
+                                                                <p>21 августа 2021 года Нижний Новгород с размахом отметил большой юбилей. 800-летие стало ярким приключением для жителей и гостей города. 800-летие Нижнего — начало нового!</p>
+                                                                                                </div>
+                                                        <div>
+                                                                <a href="/o-800-letii/o-yubilee.html">О юбилее</a>
+                                                                <a href="/o-800-letii/history.html">История города</a>
+                                                                <a href="/o-800-letii/video/">Видео</a>
+                                                                                                                            </div>
+                                                    </div>
+                                                                                                        <div class="header__additional-layer_item" data-layer="3">
+                            <div>
+                                                                <p>Специальные проекты, направленные на развитие Нижнего Новгорода в рамках 800-летия города и после юбилея.</p>
+                                                                                                </div>
+                                                        <div>
+                                                                <a href="/proekty-800/gorod-800/">Город 800</a>
+                                                                <a href="/proekty-800/800-dobryh-del.html">800 добрых дел</a>
+                                                                <a href="/proekty-800/volontery-800.html">Волонтёры 800</a>
+                                                                <a href="/proekty-800/komanda-800.html">Команда 800</a>
+                                                                                                                            </div>
+                                                    </div>
+                                                                                                        <div class="header__additional-layer_item" data-layer="4">
+                            <div>
+                                                                <p>Празднованию 800-летия Нижнего Новгорода посвятили весь 2021 год. В событийной программе было более 150 мероприятий.</p>
+                                                                                                </div>
+                                                        <div>
+                                                                <a href="/klyuchevye-sobytiya/gala-shou-nachalo-novogo.html">Гала-шоу «Начало Нового»</a>
+                                                                <a href="/klyuchevye-sobytiya/stolica-zakatov/">Столица закатов</a>
+                                                                <a href="/klyuchevye-sobytiya/novogodnyaya-stolica/">Новогодняя столица</a>
+                                                                                                                            </div>
+                                                    </div>
+                                                                                                        <div class="header__additional-layer_item" data-layer="5">
+                            <div>
+                                                                <p>«Нижний 800» подготовил материалы на актуальные темы. Будь в фокусе!</p>
+                                                                                                </div>
+                                                        <div>
+                                                                <a href="/v-fokuse/stati/">Статьи</a>
+                                                                <a href="/v-fokuse/novosti/">Новости</a>
+                                                                <a href="/v-fokuse/rekomenduem.html">Рекомендуем</a>
+                                                                                                                            </div>
+                                                    </div>
+                                                                                                        <div class="header__additional-layer_item" data-layer="6">
+                            <div>
+                                                                <p>Цикл особых мероприятий в Нижнем Новгороде.</p>
+                                                                                                </div>
+                                                        <div>
+                                                                <a href="/specproekty/dvory-800/">Дворы 800</a>
+                                                                <a href="/specproekty/ekostart-800.html">Экостарт 800</a>
+                                                                <a href="https://name.nizhny800.ru/">Имя Нижнего</a>
+                                                                                                                            </div>
+                                                    </div>
+                                                                                                        <div class="header__additional-layer_item" data-layer="7">
+                            <div>
+                                                                <p>Партнёры 800-летия Нижнего Новгорода — компании и бренды, которые поддержали общую идею празднования и сделали город красивее, комфортнее и интереснее, становясь частью главного события федерального масштаба.
+<br>Оказываемая партнёрами поддержка позволила воплотить большее количество проектов.</p>
+                                                                                                </div>
+                                                    </div>
+                                                                                                        
+                    </div>
+                </div>
+            </header>
+
+
+    <main>
+        <div class="main__inner main__inner_index day">
+            <!--intro-->
+            <section class="section intro">
+                <div class="swiper-1 intro__top">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img src="images/intro-1.jpg" alt=""></div>
+                                                        <div class="swiper-slide"><img src="images/intro-2.jpg" alt=""></div>
+                                                        <div class="swiper-slide"><img src="images/intro-3.jpg" alt=""></div>
+                                                        <div class="swiper-slide"><img src="images/intro-4.jpg" alt=""></div>
+                                                    </div>
+                    </div>
+                </div>
+                <div class="intro__bot">
+                    <div class="grid__content">
+                        <div class="intro__content">
+                            <h3>Гала-шоу празднования 800-летия</h3>
+                            <h1>Начало нового</h1>
+                            <span class="h4 intro__date">21 августа 2021 года</span>
+                            <p class="large">Грандиозное, яркое, наполненное важными смыслами и знакомыми символами — таким запомнилось главное шоу юбилея Нижнего Новгорода в постановке режиссёра Ильи Авербуха. Смотрите записи с выступлений и читайте про организационные тонкости. </p>
+                                                        <a href="/klyuchevye-sobytiya/gala-shou-nachalo-novogo.html" class="btn main-btn">
+                                <span>Подробнее</span>
+                                <svg><use xlink:href="images/sprite.svg#chevron-right"></use></svg>
+                            </a>
+                                                    </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--articles-->
+            <section class="section articlesNew-main">
+                <div class="grid__content">
+                    <div class="content-block">
+                        <div class="content-block__title">
+                            <div class="title">
+                                <h3 class="title__name">В фокусе</h3>
+                                <a href="/v-fokuse/stati/" class="btn chevron-btn">Все материалы<svg><use xlink:href="images/sprite.svg#chevron-right"></use></svg></a>
+                            </div>
+                        </div>
+
+                                                    <div class="swiper-3 position-relative">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+                            <div class="swiper-slide articlesNew__item">
+                    <div class="media-cover"><img loading="lazy" src="images/oblozhka_small01-540x810-5a6.jpg" alt=""></div>
+                    <div class="articlesNew__item-category">#статья</div>
+                    <div class="articlesNew__item-text">Как преобразились объекты культурного наследия к 800-летию Нижнего Новгорода</div>
+                    <a href="/v-fokuse/stati/kak-preobrazilis-obekty-kulturnogo-naslediya-k-800-letiyu-nizhnego-novgoroda.html" class="articlesNew__item-btn"><span>Подробнее</span></a>
+                </div>
+                            <div class="swiper-slide articlesNew__item">
+                    <div class="media-cover"><img loading="lazy" src="images/oblozhka_small-540x810-b95.jpg" alt=""></div>
+                    <div class="articlesNew__item-category">#статья</div>
+                    <div class="articlesNew__item-text">Пакгаузы — лучшее креативное пространство</div>
+                    <a href="/v-fokuse/stati/pakgauzy-luchshee-kreativnoe-prostranstvo-2.html" class="articlesNew__item-btn"><span>Подробнее</span></a>
+                </div>
+                            <div class="swiper-slide articlesNew__item">
+                    <div class="media-cover"><img loading="lazy" src="images/Oblozhka_small-540x810-9b0.png" alt=""></div>
+                    <div class="articlesNew__item-category">#статья</div>
+                    <div class="articlesNew__item-text">Вместе за Нижний!</div>
+                    <a href="/v-fokuse/stati/vmeste-za-nizhny.html" class="articlesNew__item-btn"><span>Подробнее</span></a>
+                </div>
+            
+        </div>
+        <div class="swiper-button-prev" role="button"></div>
+        <div class="swiper-button-next" role="button"></div>
+    </div>
+</div>
+                        
+                        <div class="content-block__more">
+                            <a href="/v-fokuse/stati/" class="content-block-more">
+                                <span>Все материалы</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--talisman-sec-->
+            <section class="section talisman-sec">
+                <div class="grid__content">
+                    <div class="talisman-sec__inner">
+                        <div class="talisman-sec__content">
+                            <div class="title__name"><h3>НиНо и Гор</h3></div>
+                            <p class="large">Талисманы 800-летия Нижнего Новгорода — оленёнок НиНо и дятел Гор — вернулись на родину из долгого путешествия! Они готовы поделиться со всеми своей историей, но им нужна наша помощь в поиске волшебных артефактов.</p>
+                                                        <a href="/v-fokuse/stati/talismany-800-letiya-nizhnego-novgoroda-v-gorode.html" class="btn main-btn">
+                                <span>Подробнее</span>
+                                <svg><use xlink:href="images/sprite.svg#chevron-right"></use></svg>
+                            </a>
+                                                    </div>
+                        <div class="talisman-sec__img">
+                            <img src="images/talisman-top-img.png" loading="lazy" alt="Талисманы 800-летия">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+                        <!--projects-sec-->
+            <section class="section projects-sec">
+                <div class="grid__content">
+                    <div class="content-block">
+                        <div class="content-block__title">
+                            <div class="title">
+                                <div class="title__name">
+                                    <h3>Проекты 800</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-sec__grid">
+
+                                                        <!--item-project-->
+                            <a href="/proekty-800/gorod-800/" class="item-project">
+                                <span class="item-project__bg" style="background:#5fd48e;"></span>
+                                <h3>Город 800</h3>
+                                <p class="h5">инфраструктурная программа благоустройства города и сохранения исторических объектов</p>
+                                <svg><use xlink:href="images/sprite.svg#chevron-link"></use></svg>
+                            </a>
+                                                        <!--item-project-->
+                            <a href="/proekty-800/800-dobryh-del.html" class="item-project">
+                                <span class="item-project__bg" style="background:#bc2485;"></span>
+                                <h3>800 добрых дел</h3>
+                                <p class="h5">социальное направление, продолжающее традиции благотворительности</p>
+                                <svg><use xlink:href="images/sprite.svg#chevron-link"></use></svg>
+                            </a>
+                                                        <!--item-project-->
+                            <a href="/proekty-800/volontery-800.html" class="item-project">
+                                <span class="item-project__bg" style="background:#ef212e;"></span>
+                                <h3>Волонтёры 800</h3>
+                                <p class="h5">программа подготовки волонтёров и развития добровольческого движения</p>
+                                <svg><use xlink:href="images/sprite.svg#chevron-link"></use></svg>
+                            </a>
+                                                        <!--item-project-->
+                            <a href="/proekty-800/komanda-800.html" class="item-project">
+                                <span class="item-project__bg" style="background:#69c8f8;"></span>
+                                <h3>Команда 800</h3>
+                                <p class="h5">грантовый проект, вовлекавший горожан в подготовку к 800-летию Нижнего Новгорода</p>
+                                <svg><use xlink:href="images/sprite.svg#chevron-link"></use></svg>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+                        <!--video-->
+            <section class="section about800-content">
+                <div class="grid__content">
+                    <div class="content-block">
+                        <div class="content-block__title">
+                            <div class="title">
+                                <div class="title__name">
+                                    <h3>«Быть, а не казаться»</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about800-content__video" data-src="https://vk.com/video_ext.php?oid=-181940196&id=456239496&hd=2">
+                            <iframe title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            <img src="images/main-vid-poster.jpg" alt="video-bg">
+                            <button class="record-section__button"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+
+
+
+            <!--footer-->
+            <footer class="footer">
+                <div class="footer__inner grid__left">
+                    <div class="grid__content">
+                        <div class="footer__menu footer-new">
+                            <div class="footer__menu_item">
+                                <div class="item__menu_items">
+                                    <div class="item__menu-col">
+                                                                                                                            <div class="footer__menu-links">
+                                            <div class="footer__links-head footer__link">О 800-летии</div>
+                                                                                        <a class="footer__link" href="/o-800-letii/o-yubilee.html">О юбилее</a>
+                                                                                        <a class="footer__link" href="/o-800-letii/history.html">История города</a>
+                                                                                        <a class="footer__link" href="/o-800-letii/video/">Видео</a>
+                                            
+                                        </div>
+                                                                                                                                                                                                                    <div class="footer__menu-links">
+                                            <div class="footer__links-head footer__link">Проекты 800</div>
+                                                                                        <a class="footer__link" href="/proekty-800/gorod-800/">Город 800</a>
+                                                                                        <a class="footer__link" href="/proekty-800/800-dobryh-del.html">800 добрых дел</a>
+                                                                                        <a class="footer__link" href="/proekty-800/volontery-800.html">Волонтёры 800</a>
+                                                                                        <a class="footer__link" href="/proekty-800/komanda-800.html">Команда 800</a>
+                                            
+                                        </div>
+                                                                                                                            </div>
+                                    <div class="item__menu-col">
+                                                                                                                                                                         <div class="footer__menu-links">
+                                            <div class="footer__links-head footer__link">Ключевые события</div>
+                                                                                        <a class="footer__link" href="/klyuchevye-sobytiya/gala-shou-nachalo-novogo.html">Гала-шоу «Начало Нового»</a>
+                                                                                        <a class="footer__link" href="/klyuchevye-sobytiya/stolica-zakatov/">Столица закатов</a>
+                                                                                        <a class="footer__link" href="/klyuchevye-sobytiya/novogodnyaya-stolica/">Новогодняя столица</a>
+                                            
+                                        </div>
+                                                                                                                                                                                                                    <div class="footer__menu-links">
+                                            <div class="footer__links-head footer__link">В фокусе</div>
+                                                                                        <a class="footer__link" href="/v-fokuse/stati/">Статьи</a>
+                                                                                        <a class="footer__link" href="/v-fokuse/novosti/">Новости</a>
+                                                                                        <a class="footer__link" href="/v-fokuse/rekomenduem.html">Рекомендуем</a>
+                                            
+                                        </div>
+                                                                                                                            </div>
+                                    <div class="item__menu-col">
+                                                                                                                                                                         <div class="footer__menu-links">
+                                            <div class="footer__links-head footer__link">Спецпроекты</div>
+                                                                                        <a class="footer__link" href="/specproekty/dvory-800/">Дворы 800</a>
+                                                                                        <a class="footer__link" href="/specproekty/ekostart-800.html">Экостарт 800</a>
+                                                                                        <a class="footer__link" href="https://name.nizhny800.ru/">Имя Нижнего</a>
+                                            
+                                        </div>
+                                                                                                <div class="footer__menu-links">
+                                                        <a class="footer__links-head footer__link-store footer__link" target="_blank" href="https://store.nizhny800.ru">Интернет-магазин</a>
+                                                        <a class="footer__links-head footer__link" href="/partnyory-800-letiya/">Партнёры 800-летия</a>
+                                                        <a class="footer__links-head footer__link" href="/contacts.html">Контакты</a>
+                                                    </div>
+                                                    <div class="item__menu_sn-box">
+
+                                                                                                                <a href="https://ok.ru/nizhny800" rel="noreferrer noopener nofollow" target="_blank" class="sn-box__item">
+                                                            <img src="images/ok-icon.svg" alt="одноклассники">
+                                                        </a>
+                                                                                                                <a href="https://t.me/nizhny800" rel="noreferrer noopener nofollow" target="_blank" class="sn-box__item">
+                                                            <img src="images/telegram-icon.svg" alt="telegram">
+                                                        </a>
+                                                                                                                <a href="https://www.youtube.com/channel/UCY9nch3eFIvRcs9i8HAb-qA" rel="noreferrer noopener nofollow" target="_blank" class="sn-box__item">
+                                                            <img src="images/youtube-152810-1.svg" alt="youtube">
+                                                        </a>
+                                                                                                                <a href="https://clck.ru/T8pw6" rel="noreferrer noopener nofollow" target="_blank" class="sn-box__item">
+                                                            <img src="images/ydezn.svg" alt="ydezn">
+                                                        </a>
+                                                                                                                <a href="https://vk.com/nizhny800" rel="noreferrer noopener nofollow" target="_blank" class="sn-box__item">
+                                                            <img src="images/vk_black.svg" alt="vk">
+                                                        </a>
+                                                        
+                                                    </div>
+                                                                                                                                                                                                                                                                                                                                                                </div>
+
+                                </div>
+                            </div>
+                            <div class="footer__menu_item">
+                                <div class="copyright-box">
+                                    <div class="copyright-box__copyright">
+                                        <span>© Нижний800, 2024</span>
+                                        <a href="assets/files/policy.pdf" target="_blank">
+                                            Политика обработки персональных данных
+                                        </a>
+                                        <a href="assets/files/agreement.pdf" target="_blank">
+                                            Пользовательское соглашение
+                                        </a>
+                                    </div>
+                                    <div class="team800">
+                                        <div class="team800__text">
+                                            <a href="mailto:info@nizhny800.ru">
+                                                <span class="f_mail_ico"></span>
+                                                info@nizhny800.ru                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__menu_item">
+                                <a class="ourlogo" href="https://omniagency.ru/" target="_blank" rel="nofollow">
+                                    <img src="images/dev.svg" alt="made by Omni">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="cookie_message">
+                <div class="cookie_message_close"></div>
+                <div class="cookie_message_inner">
+                    <p>
+                        Мы используем cookie, чтобы собирать статистику и делать контент более интересным.
+                        Также cookie используются для отображения более релевантной рекламы.
+                        Продолжая навигацию по веб-сайту, вы соглашаетесь на использование файлов cookie.
+                    </p>
+                    <p>
+                        Вы можете прочитать подробнее о <a href="https://ru.wikipedia.org/wiki/Cookie" target="_blank">cookie-файлах</a> и изменить настройки вашего браузера.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="global pageup">
+        <img src="images/global_pageup.svg" alt="pageup">
+    </div>
+    <!--Layout pps-->
+    <div id="office-auth-form">
+        <div class="pp pp_small" data-mod="recovery">
+            <div class="pp__bg"></div>
+            <div class="pp__content pp__content_small">
+                <div class="pp-content pp-content_small">
+                    <div class="pp-cross"></div>
+                    <div class="pp-enter">
+                        <div class="pp-enter__title">
+                            <h5>Восстановление пароля</h5>
+                        </div>
+                        <div class="pp-enter__text">
+						<span>
+							Введите e-mail, указанный при регистрации, чтобы мы смогли выслать инструкции по
+							восстановлению</span>
+                        </div>
+                        <div class="pp-enter__fields">
+                            <form id="office-auth-recover">
+                                <fieldset>
+                                    <div class="pp__inputs">
+                                        <div class="pp-inputs">
+                                            <div class="pp-inputs__item">
+                                                <label class="error"></label>
+                                                <img src="images/pp-input-ico-1.svg" alt="input">
+                                                <input autocomplete="off" required="" tabindex="1" type="email" name="email" id="office-auth-recover-username" placeholder="Введите ваш e-mail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="color_green pp_ go_to_thanx" data-pp="thanx" style="visibility: hidden"></a>
+                                    <div class="pp__button">
+                                        <button type="submit" class="btn">
+                                        <span>
+                                            отправить
+                                        </span>
+                                        </button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="pp-enter__toreg">
+						<span>Уже зарегитрированы?<a class="color_green pp_ pp-ajax" data-pp="signin">
+								Вход</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pp pp_double" data-mod="signin">
+            <div class="pp__bg"></div>
+            <div class="pp__content pp__content_enter">
+                <div class="pp-content">
+                    <div class="pp-cross"></div>
+                    <div class="pp-content__left">
+                        <div class="pp__enter">
+                            <div class="pp-enter">
+                                <div class="pp-enter__title">
+                                    <h5>
+                                        Быстрый вход
+                                    </h5>
+                                </div>
+                                <div class="pp-enter__socs">
+                                    <div class="socs">
+                                        <div class="socs-cont">
+                                            <a href="https://nizhny800.ru/about?hauth_action=login&provider=Vkontakte" class="socs__item socs__item_vk" rel="nofollow" title="Vkontakte"><span></span></a>
+                                            <a href="https://nizhny800.ru/about?hauth_action=login&provider=Odnoklassniki" class="socs__item socs__item_ok" rel="nofollow" title="Odnoklassniki"><span></span></a>
+                                        </div>
+                                        <div class="socs-or">
+                                        <span>
+                                            или
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pp-enter__fields">
+                                    <form method="post" id="office-auth-login">
+                                        <fieldset>
+                                            <div class="pp__inputs">
+                                                <div class="pp-inputs">
+                                                    <div class="pp-inputs__item">
+                                                        <label class="error">Введите корректный email</label>
+                                                        <img src="images/pp-input-ico-1.svg" alt="username">
+                                                        <input class="error" autocomplete="off" tabindex="1" type="email" name="username" id="office-auth-login-username" placeholder="Введите ваш e-mail">
+                                                    </div>
+                                                    <div class="pp-inputs__item">
+                                                        <label class="error"></label>
+                                                        <img src="images/pp-input-ico-2.svg" alt="password">
+                                                        <a class="pp_ pp-input-pp pp-ajax" data-pp="recovery">
+                                                            Восстановить пароль
+                                                        </a>
+                                                        <input autocomplete="off" tabindex="2" type="password" name="password" class="" id="office-auth-login-password" placeholder="Пароль">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pp__button">
+                                                <button type="submit" class="btn">
+                                                <span>
+                                                    войти
+                                                </span>
+                                                </button>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="pp-enter__toreg">
+								<span>
+									Впервые на сайте?
+									<a class="color_green pp_ pp-ajax" data-pp="registration">
+										Зарегистрируйтесь
+									</a>
+								</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pp pp_double" data-mod="registration">
+            <div class="pp__bg"></div>
+            <div class="pp__content pp__content_enter">
+                <div class="pp-content">
+                    <div class="pp-cross"></div>
+                    <div class="pp-content__left">
+                        <div class="pp__enter">
+                            <div class="pp-enter">
+                                <div class="pp-enter__title">
+                                    <h5>
+                                        Регистрация
+                                        <br>
+                                        нового пользователя
+                                    </h5>
+                                </div>
+                                <div class="pp-enter__fields">
+                                    <form method="post" id="office-auth-register" class="js-register">
+                                        <fieldset>
+                                            <div class="pp__inputs">
+                                                <div class="pp-inputs">
+                                                    <div class="pp-inputs__item">
+                                                        <label class="error"></label>
+                                                        <img src="images/pp-input-ico-1.svg" alt="email">
+                                                        <input autocomplete="off" required="" tabindex="1" type="text" name="email" placeholder="Введите ваш e-mail">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pp__check">
+                                                <div class="pp-check">
+                                                    <div class="pp-check__checkbox">
+                                                        <div class="check">
+                                                            <label class="error"></label>
+                                                            <input autocomplete="off" class="styled-checkbox" id="checkrules" value="" name="terms_ok" type="checkbox">
+                                                            <label for="checkrules"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pp-check__text">
+                                                    <span>
+                                                        Нажимая кнопку зарегистрироваться, я подтверждаю, что ознакомился и принимаю
+                                                        <a class="" href="html/static/files/policy.pdf" target="_blank">
+                                                          политику обработки персональных данных
+                                                        </a>
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="color_green pp_ go_to_thanx" data-pp="registration_thanx" style="visibility: hidden"></a>
+                                            <div class="pp__button">
+                                                <button class="btn emailRegistrate" type="submit">
+                                                <span>
+                                                  зарегистрироваться
+                                                </span>
+                                                </button>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="pp-enter__toreg">
+								<span>
+									Уже зарегистрированы?
+									<a class="color_green pp_ pp-ajax" data-pp="signin">
+										Вход
+									</a>
+								</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pp pp_small pp_thanx" data-mod="registration_thanx">
+            <div class="pp__bg"></div>
+            <div class="pp__content pp__content_small">
+                <div class="pp-content pp-content_small">
+                    <div class="pp-cross"></div>
+                    <div class="pp-enter">
+                        <div class="pp-enter__thanx-ico">
+                            <img src="images/thanx-ico.svg" alt="thanx">
+                        </div>
+                        <div class="pp-enter__text">
+						<span>
+							Пароль сгенерирован и успешно отправлен на указанную вами электронную почту
+						</span>
+                        </div>
+                        <div class="pp__button">
+                            <button type="button" class="btn btn_close">
+							<span>
+								закрыть
+							</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pp pp_simple pp_simple_rules pp_simple_test" data-mod="pp_poll">
+        <div class="pp__bg"></div>
+        <div class="pp__content pp__content_simple">
+            <div class="pp-content pp-content_simple">
+                <div class="pp-cross"></div>
+                <div class="content-block__title">
+                    <div class="title">
+                        <div class="title__name">
+                            <h2></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="pp-content__text">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pp pp_success" data-mod="pp_success">
+        <div class="pp__bg"></div>
+        <div class="pp__content pp__content_success">
+            <div class="pp-cross"></div>
+            <div class="success-container">
+                <div class="success-container__title"></div>
+                <div class="success-container__descr"></div>
+                <button class="btn success-container__button pink close_btn">
+                    <span>Закрыть</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="pp pp_success pp_error" data-mod="pp_error">
+        <div class="pp__bg"></div>
+        <div class="pp__content pp__content_success">
+            <div class="pp-cross"></div>
+            <div class="success-container">
+                <div class="success-container__title">Что-то пошло не так</div>
+                <div class="success-container__descr"></div>
+                <button class="btn success-container__button pink close_btn">
+                    <span>Закрыть</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+	
+	
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter55467490 = new Ya.Metrika({
+                    id:55467490,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            x = "https://mc.yandex.ru/metrika/watch.js",
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        for (var i = 0; i < document.scripts.length; i++) {
+            if (document.scripts[i].src === x) { return; }
+        }
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = x;
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/55467490" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+	
+<!--<script src="html/static/js/libs/jquery.slim.min.js"></script>-->
+<script src="js/jquery.inputmask.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/PNotify.js"></script>
+<script src="js/jquery.ba-throttle-debounce.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/tilt.jquery.min.js"></script>
+<script src="js/cocoen.js"></script>
+<script src="js/main.js"></script>
+<script src="js/special.js"></script>
+
+
+
+
+<script src="js/scripts.min.js"></script>
+<script src="js/custom.js"></script>
+
+
+<script type="text/javascript" defer="" src="js/script.js"></script>
+
+
+
+</body></html>
